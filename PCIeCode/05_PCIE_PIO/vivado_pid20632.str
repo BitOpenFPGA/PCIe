@@ -1,0 +1,326 @@
+/*
+
+Xilinx Vivado v2018.3.1 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2489853 on Tue Mar 26 04:20:25 MDT 2019
+IP Build: 2486929 on Tue Mar 26 06:44:21 MDT 2019
+
+Process ID (PID): 20632
+License: Customer
+
+Current time: 	Sat Sep 26 18:14:33 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 1 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zlk
+User home directory: C:/Users/zlk
+User working directory: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.3
+RDI_DATADIR: F:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/zlk/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/zlk/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/zlk/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/vivado.log
+Vivado journal file location: 	F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/vivado.jou
+Engine tmp dir: 	F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/.Xil/Vivado-20632-LAPTOP-8E6RLG3I
+
+Xilinx Environment Variables
+----------------------------
+ALTERAOCLSDKROOT: E:\intelFPGA\17.0\hld
+XILINX: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2018.3
+XILINX_SDK: F:/Xilinx/SDK/2018.3
+XILINX_VIVADO: F:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 557 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 112 MB (+114465kb) [00:00:12]
+// [Engine Memory]: 544 MB (+418998kb) [00:00:12]
+// aL (cp): Older Project Version: addNotify
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 914ms to process. Increasing delay to 4000 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\FILE\FPGA\ZYNQ\PCIe\05_PCIE_PIO\pcie_7x_0_ex.xpr. Version: Vivado v2016.4 
+dismissDialog("Older Project Version"); // aL (cp)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 47 MB. Current time: 9/26/20, 6:14:35 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 720 MB (+155978kb) [00:00:38]
+// [Engine Memory]: 779 MB (+23847kb) [00:00:40]
+// WARNING: HEventQueue.dispatchEvent() is taking  5118 ms.
+// Tcl Message: open_project F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/MIZ7035/S09/S09_CH01_PCIE_PIO' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'. 
+// Tcl Message: INFO: [Project 1-230] Project 'pcie_7x_0_ex.xpr' upgraded for this version of Vivado. 
+// HMemoryUtils.trashcanNow. Engine heap size: 792 MB. GUI used memory: 54 MB. Current time: 9/26/20, 6:15:00 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 824.203 ; gain = 223.805 
+// Project name: pcie_7x_0_ex; location: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO; part: xc7z035ffg676-2
+// Elapsed time: 27 seconds
+dismissDialog("Open Project"); // bx (cp)
+// al (cp): Project Upgraded: addNotify
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_REPORT_IP_STATUS, "Report IP Status"); // a (al)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+dismissDialog("Project Upgraded"); // al (cp)
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// bx (cp):  Report IP Status : addNotify
+dismissDialog("Report IP Status"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cp)
+// [Engine Memory]: 824 MB (+6262kb) [00:00:58]
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ah (cp): Upgrade IP: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// ab (cp): Enable Core Container: addNotify
+dismissDialog("Upgrade IP"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 827 MB. GUI used memory: 93 MB. Current time: 9/26/20, 6:15:20 PM CST
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+// 'Y' command handler elapsed time: 32 seconds
+dismissDialog("Enable Core Container"); // ab (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bx (cp):  Upgrade IP : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset ila_0 [get_ips  {ila_0 ila_rx pcie_7x_0}] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'ila_0' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'. 
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 874 MB. GUI used memory: 55 MB. Current time: 9/26/20, 6:16:20 PM CST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 874 MB (+9665kb) [00:02:02]
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded ila_0 (ILA (Integrated Logic Analyzer) 6.2) from revision 1 to revision 8 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Upgrading 'ila_rx' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_rx/ila_rx.xci' from fileset 'ila_rx' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded ila_rx (ILA (Integrated Logic Analyzer) 6.2) from revision 1 to revision 8 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_rx'... 
+// TclEventType: RUN_RESET
+// Tcl Message: Upgrading 'pcie_7x_0' 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci' from fileset 'pcie_7x_0' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 911 MB. GUI used memory: 56 MB. Current time: 9/26/20, 6:16:50 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded pcie_7x_0 (7 Series Integrated Block for PCI Express 3.3) from revision 3 to revision 10 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie_7x_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/ip_upgrade.log'. 
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 930.801 ; gain = 75.465 
+// Tcl Message: export_ip_user_files -of_objects [get_ips {ila_0 ila_rx pcie_7x_0}] -no_script -sync -force -quiet 
+// Elapsed time: 62 seconds
+dismissDialog("Upgrade IP"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 840ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 36 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 12 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 935 MB. GUI used memory: 56 MB. Current time: 9/26/20, 6:17:35 PM CST
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_rx'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_rx'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie_7x_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// [Engine Memory]: 935 MB (+18060kb) [00:03:25]
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Sep 26 18:17:48 2020] Launched ila_rx_synth_1, pcie_7x_0_synth_1, ila_0_synth_1... Run output will be captured here: ila_rx_synth_1: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/ila_rx_synth_1/runme.log pcie_7x_0_synth_1: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/pcie_7x_0_synth_1/runme.log ila_0_synth_1: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/ila_0_synth_1/runme.log [Sat Sep 26 18:17:48 2020] Launched synth_1... Run output will be captured here: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 952.984 ; gain = 22.184 
+// 'k' command handler elapsed time: 18 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 809ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 960 MB. GUI used memory: 71 MB. Current time: 9/26/20, 6:20:10 PM CST
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 877ms to process. Increasing delay to 4000 ms.
+// ah (cp): Synthesis Completed: addNotify
+// [GUI Memory]: 122 MB (+5274kb) [00:06:35]
+// Elapsed time: 218 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (D, cp)
+// PAPropertyPanels.initPanels (xilinx_pcie_7x_ep_x4g1.xdc) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+// [GUI Memory]: 128 MB (+113kb) [00:07:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, xilinx_pcie_7x_ep_x4g1.xdc]", 5, false); // B (D, cp)
+// Elapsed time: 35 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_7x_0]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, pcie_7x_0, Simulation]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cp):  Re-customize IP : addNotify
+// r (cp): Re-customize IP: addNotify
+// [Engine Memory]: 987 MB (+5226kb) [00:08:01]
+// WARNING: HEventQueue.dispatchEvent() is taking  2608 ms.
+dismissDialog("Re-customize IP"); // O (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 987 MB. GUI used memory: 85 MB. Current time: 9/26/20, 6:22:20 PM CST
+// Elapsed time: 259 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "IDs", 1); // cT (C, r)
+selectCodeEditor("xilinx_pcie_7x_ep_x4g1.xdc", 933, 274); // cl (w, cp)
+selectCodeEditor("xilinx_pcie_7x_ep_x4g1.xdc", 965, 328); // cl (w, cp)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B (f, r)
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE, "Product Guide"); // af (al, r)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE
+// bx (cp):  Product Guide : addNotify
+dismissDialog("Product Guide"); // bx (cp)
+// [GUI Memory]: 144 MB (+9089kb) [00:17:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 85 MB. Current time: 9/26/20, 6:52:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 7:22:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 7:52:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 8:22:22 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 8:52:22 PM CST
+// Elapsed time: 9089 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "BARs", 2); // cT (C, r)
+// Elapsed time: 55 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Core Capabilities", 3); // cT (C, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 9:22:22 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 9:52:22 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 10:22:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 10:52:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 11:22:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/26/20, 11:52:24 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/27/20, 12:22:25 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/27/20, 12:52:25 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/27/20, 1:22:25 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/27/20, 1:52:26 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 80 MB. Current time: 9/27/20, 2:22:26 AM CST

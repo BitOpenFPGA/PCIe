@@ -1,0 +1,22 @@
+$date
+        2017-Nov-25 17:21:04
+$end
+$version
+        Vivado v2016.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " app/PIO/PIO_EP_inst/EP_TX_inst/req_compl $end
+$var reg 2 # app/PIO/PIO_EP_inst/EP_TX_inst/state [1:0] $end
+$var reg 64 % app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata [63:0] $end
+$var reg 8 e app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep [7:0] $end
+$var reg 1 m app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tlast $end
+$var reg 1 n app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tvalid $end
+$var reg 1 o app/PIO/PIO_EP_inst/EP_TX_inst/compl_wd $end
+$var reg 1 p _TRIGGER $end
+$var reg 1 q _WINDOW $end
+$var reg 1 r _GAP $end
+$upscope $end
+$enddefinitions $end

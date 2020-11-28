@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Oct  6 01:40:13 2020
+# Process ID: 2620
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8164 F:\FILE\FPGA\ZYNQ\PCIe\00_AXI_Lite_User_GPIO\sys\sys.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/pcie_7x_0_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4761fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_tvalid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/state[7:0]</obj_property>
+      <obj_property name="ObjectShortName">state[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_tdata[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_tkeep[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_tlast</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid_1</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_tvalid_1</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_rx_tready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

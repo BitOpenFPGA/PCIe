@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.sim/sim_1/impl/timing/xsim/tb_axi_stream_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXI_stream_v1
+INFO: [VRFC 10-311] analyzing module AXI_stream_v1_M00_AXIS
+INFO: [VRFC 10-311] analyzing module AXI_stream_v1_S00_AXIS
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/tb_axi_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_axi_stream

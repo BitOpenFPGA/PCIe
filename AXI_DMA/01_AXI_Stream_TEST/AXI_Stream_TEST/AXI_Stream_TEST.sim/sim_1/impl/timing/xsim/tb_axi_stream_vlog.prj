@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_axi_stream_time_impl.v" \
+"../../../../../../DOC/tb_axi_stream.v" \
+
+# Do not sort compile order
+nosort

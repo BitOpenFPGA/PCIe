@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Oct  6 03:16:25 2020
+# Process ID: 15484
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1
+# Command line: vivado.exe -log xilinx_pcie_2_1_ep_7x.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xilinx_pcie_2_1_ep_7x.tcl -notrace
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.vdi
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source xilinx_pcie_2_1_ep_7x.tcl -notrace

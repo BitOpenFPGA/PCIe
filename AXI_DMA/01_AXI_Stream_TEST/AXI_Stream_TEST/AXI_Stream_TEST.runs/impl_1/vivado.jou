@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 30 20:59:36 2020
+# Process ID: 21684
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/impl_1
+# Command line: vivado.exe -log AXI_stream_v1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AXI_stream_v1.tcl -notrace
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/impl_1/AXI_stream_v1.vdi
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AXI_stream_v1.tcl -notrace

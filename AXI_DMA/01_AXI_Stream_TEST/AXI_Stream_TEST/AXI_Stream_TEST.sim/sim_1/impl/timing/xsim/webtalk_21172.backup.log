@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 30 21:03:04 2020
+# Process ID: 21172
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.sim/sim_1/impl/timing/xsim/xsim.dir/tb_axi_stream_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.sim/sim_1/impl/timing/xsim/xsim.dir/tb_axi_stream_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Aug 30 21:03:06 2020...

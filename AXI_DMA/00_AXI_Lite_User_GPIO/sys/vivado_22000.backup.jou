@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 30 04:10:02 2020
+# Process ID: 22000
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20696 F:\FILE\FPGA\ZYNQ\PCIe\00_AXI_Lite_User_GPIO\sys\sys.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.xpr
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {f:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Debug_Method/CH11_AXI_Debug_Method/Miz_ip_lib F:/FILE/FPGA/ZYNQ/PCIe/UAER_IP/GPIO_LITE_ML_1.0} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/FILE/FPGA/ZYNQ/PCIe/UAER_IP/GPIO_LITE_ML_1.0 [current_project]
+update_ip_catalog
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

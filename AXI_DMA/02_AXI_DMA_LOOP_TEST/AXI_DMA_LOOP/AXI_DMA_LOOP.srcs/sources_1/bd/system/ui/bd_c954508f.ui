@@ -1,0 +1,39 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -210 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -190 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 2 -y -440 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -y -310 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -y -40 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 2 -y -790 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -y -110 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y -540 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y -390 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -y -320 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -y -170 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 2 3 NJ -210 N -210 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 1140J -540 1510
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 -20 -400 590 -560 1150J -510 1560
+preplace netloc axi_smc_M00_AXI 1 1 4 600 -270 1110J -220 NJ -220 1890
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 1160
+preplace netloc axi_dma_0_s2mm_introut 1 0 3 -30 -410 570 -590 1110
+preplace netloc axi_dma_0_M_AXI_MM2S 1 2 2 NJ -500 1550
+preplace netloc xlconcat_0_dout 1 1 1 580
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ -190 1570 -200 1890
+preplace netloc axi_dma_0_mm2s_introut 1 0 3 -40 -420 560 -600 1120
+preplace netloc axi_dma_0_M_AXI_S2MM 1 2 2 1160J -490 1530
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 3 600 -290 1120 -230 1510
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 0 -230 580 -580 1130 -530 1540
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 0 4 -10J -240 590J -280 1150 -240 1520
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 4 600 -570 1160J -520 1510J -400 1890
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 3 1 1520
+levelinfo -pg 1 -60 400 880 1340 1740 1920 -top -880 -bot 160
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}

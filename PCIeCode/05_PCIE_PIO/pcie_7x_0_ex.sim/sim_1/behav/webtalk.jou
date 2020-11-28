@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Nov 25 13:36:41 2017
+# Process ID: 11288
+# Current directory: g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/pcie_7x_0_ex.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/pcie_7x_0_ex.sim/sim_1/behav/xsim.dir/board_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/pcie_7x_0_ex.sim/sim_1/behav/webtalk.log
+# Journal file: g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/pcie_7x_0_ex.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/pcie_7x_0_ex.sim/sim_1/behav/xsim.dir/board_behav/webtalk/xsim_webtalk.tcl -notrace

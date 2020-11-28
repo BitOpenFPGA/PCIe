@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Oct  6 02:05:26 2020
+# Process ID: 5916
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16056 F:\FILE\FPGA\ZYNQ\PCIe\00_AXI_Lite_User_GPIO\sys\sys.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FILE/FPGA/ZYNQ/PCIe/UAER_IP/GPIO_LITE_ML_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_math_ip_0_0
+
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:24 . Memory (MB): peak = 920.215 ; gain = 280.008
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1973.363 ; gain = 682.223
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1435] Device xc7z035 (JTAG device index = 1) is not programmed (DONE status = 0).
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 02:10:23 2020...

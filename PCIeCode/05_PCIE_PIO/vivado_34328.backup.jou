@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Mon Oct  5 20:07:29 2020
+# Process ID: 34328
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21856 F:\FILE\FPGA\ZYNQ\PCIe\05_PCIE_PIO\pcie_7x_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server

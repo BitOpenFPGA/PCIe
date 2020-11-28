@@ -1,0 +1,166 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+Running default test {pio_writeReadBack_test0}......
+[                   0] : System Reset Asserted...
+[             4995000] : System Reset De-asserted...
+[            64025416] : Transaction Reset Is De-asserted...
+[            65033386] : Transaction Link Is Up...
+[            65065331] : TSK_PARSE_FRAME on Transmit
+[            66497207] : TSK_PARSE_FRAME on Receive
+[            69065316] :    Check Max Link Speed = 2.5GT/s - PASSED
+[            69065316] : Check Negotiated Link Width = 4x - PASSED
+[            69089316] : TSK_PARSE_FRAME on Transmit
+[            70345276] : TSK_PARSE_FRAME on Receive
+[            73089270] :    Check Device/Vendor ID - PASSED
+[            73113269] : TSK_PARSE_FRAME on Transmit
+[            74369220] : TSK_PARSE_FRAME on Receive
+[            77113193] :    Check CMPS ID - PASSED
+[            77113193] : SYSTEM CHECK PASSED
+[            77113193] : Inspecting Core Configuration Space...
+[            77137207] : TSK_PARSE_FRAME on Transmit
+[            77961322] : TSK_PARSE_FRAME on Transmit
+[            78377220] : TSK_PARSE_FRAME on Receive
+[            79217316] : TSK_PARSE_FRAME on Receive
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+Running default test {pio_writeReadBack_test0}......
+[                   0] : System Reset Asserted...
+[             4995000] : System Reset De-asserted...
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+Running default test {pio_writeReadBack_test0}......
+[                   0] : System Reset Asserted...
+[             4995000] : System Reset De-asserted...
+[            64025416] : Transaction Reset Is De-asserted...
+[            65033386] : Transaction Link Is Up...
+[            65065331] : TSK_PARSE_FRAME on Transmit
+[            66497207] : TSK_PARSE_FRAME on Receive
+[            69065316] :    Check Max Link Speed = 2.5GT/s - PASSED
+[            69065316] : Check Negotiated Link Width = 4x - PASSED
+[            69089316] : TSK_PARSE_FRAME on Transmit
+[            70345276] : TSK_PARSE_FRAME on Receive
+[            73089270] :    Check Device/Vendor ID - PASSED
+[            73113269] : TSK_PARSE_FRAME on Transmit
+[            74369220] : TSK_PARSE_FRAME on Receive
+[            77113193] :    Check CMPS ID - PASSED
+[            77113193] : SYSTEM CHECK PASSED
+[            77113193] : Inspecting Core Configuration Space...
+[            77137207] : TSK_PARSE_FRAME on Transmit
+[            77961322] : TSK_PARSE_FRAME on Transmit
+[            78377220] : TSK_PARSE_FRAME on Receive
+[            79217316] : TSK_PARSE_FRAME on Receive
+[            81985316] : TSK_PARSE_FRAME on Transmit
+[            82809220] : TSK_PARSE_FRAME on Transmit
+[            83225276] : TSK_PARSE_FRAME on Receive
+[            84065287] : TSK_PARSE_FRAME on Receive
+[            86833308] : TSK_PARSE_FRAME on Transmit
+[            87657264] : TSK_PARSE_FRAME on Transmit
+[            88073316] : TSK_PARSE_FRAME on Receive
+[            88913220] : TSK_PARSE_FRAME on Receive
+[            91681194] : TSK_PARSE_FRAME on Transmit
+[            92505331] : TSK_PARSE_FRAME on Transmit
+[            92921220] : TSK_PARSE_FRAME on Receive
+[            93761316] : TSK_PARSE_FRAME on Receive
+[            96529316] : TSK_PARSE_FRAME on Transmit
+[            97353220] : TSK_PARSE_FRAME on Transmit
+[            97769277] : TSK_PARSE_FRAME on Receive
+[            98609296] : TSK_PARSE_FRAME on Receive
+[           101377317] : TSK_PARSE_FRAME on Transmit
+[           102201275] : TSK_PARSE_FRAME on Transmit
+[           102617322] : TSK_PARSE_FRAME on Receive
+[           103457207] : TSK_PARSE_FRAME on Receive
+[           106225186] : TSK_PARSE_FRAME on Transmit
+[           107049328] : TSK_PARSE_FRAME on Transmit
+[           107465220] : TSK_PARSE_FRAME on Receive
+[           108305316] : TSK_PARSE_FRAME on Receive
+[           111049316] PCI EXPRESS BAR MEMORY/IO MAPPING PROCESS BEGUN...
+	BAR 0: VALUE = 00000000 RANGE = fff00000 TYPE =  MEM32 MAPPED
+	BAR 1: VALUE = 00000000 RANGE = 00000000 TYPE =      DISABLED
+	BAR 2: VALUE = 00000000 RANGE = 00000000 TYPE =      DISABLED
+	BAR 3: VALUE = 00000000 RANGE = 00000000 TYPE =      DISABLED
+	BAR 4: VALUE = 00000000 RANGE = 00000000 TYPE =      DISABLED
+	BAR 5: VALUE = 00000000 RANGE = 00000000 TYPE =      DISABLED
+	EROM : VALUE = 00000000 RANGE = 00000000 TYPE =      DISABLED
+[           111049316] : Setting Core Configuration Space...
+[           111073316] : TSK_PARSE_FRAME on Transmit
+[           111897220] : TSK_PARSE_FRAME on Transmit
+[           112313269] : TSK_PARSE_FRAME on Receive
+[           112721316] : TSK_PARSE_FRAME on Transmit
+[           113137317] : TSK_PARSE_FRAME on Receive
+[           113545220] : TSK_PARSE_FRAME on Transmit
+[           113961275] : TSK_PARSE_FRAME on Receive
+[           114369322] : TSK_PARSE_FRAME on Transmit
+[           114785226] : TSK_PARSE_FRAME on Receive
+[           115193193] : TSK_PARSE_FRAME on Transmit
+[           115609316] : TSK_PARSE_FRAME on Receive
+[           116017332] : TSK_PARSE_FRAME on Transmit
+[           116433220] : TSK_PARSE_FRAME on Receive
+[           116841204] : TSK_PARSE_FRAME on Transmit
+[           117257316] : TSK_PARSE_FRAME on Receive
+[           117665287] : TSK_PARSE_FRAME on Transmit
+[           118081220] : TSK_PARSE_FRAME on Receive
+[           118905316] : TSK_PARSE_FRAME on Receive
+[           125665316] : Transmitting TLPs to Memory 32 Space BAR 0
+[           125689316] : TSK_PARSE_FRAME on Transmit
+[           125793265] : TSK_PARSE_FRAME on Transmit
+Stopped at time : 126281202 ps : File "g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/imports/PIO_RX_ENGINE.v" Line 503
+Stopped at time : 126289203 ps : File "g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex/imports/PIO_RX_ENGINE.v" Line 503
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.EP.pcie_7x_0_support_i.pcie_7x_0_i.inst.inst.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_tx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top.pcie_brams_rx NUM_BRAMS 4  DOB_REG 1 WIDTH 18 RAM_WRITE_LATENCY 0 RAM_RADDR_LATENCY 0 RAM_RDATA_LATENCY 2
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_TX 1 COLS_TX 4
+[                   0] board.RP.rport.pcie_top_i.pcie_7x_i.pcie_bram_top ROWS_RX 1 COLS_RX 4
+Running default test {pio_writeReadBack_test0}......
+[                   0] : System Reset Asserted...
+[             4995000] : System Reset De-asserted...
+[            64025416] : Transaction Reset Is De-asserted...
+[            65033386] : Transaction Link Is Up...
+[            65065331] : TSK_PARSE_FRAME on Transmit
+[            66497207] : TSK_PARSE_FRAME on Receive
+[            69065316] :    Check Max Link Speed = 2.5GT/s - PASSED
+[            69065316] : Check Negotiated Link Width = 4x - PASSED
+[            69089316] : TSK_PARSE_FRAME on Transmit
+[            70345276] : TSK_PARSE_FRAME on Receive
+[            73089270] :    Check Device/Vendor ID - PASSED
+[            73113269] : TSK_PARSE_FRAME on Transmit
+[            74369220] : TSK_PARSE_FRAME on Receive
+[            77113193] :    Check CMPS ID - PASSED
+[            77113193] : SYSTEM CHECK PASSED
+[            77113193] : Inspecting Core Configuration Space...
+[            77137207] : TSK_PARSE_FRAME on Transmit
+[            77961322] : TSK_PARSE_FRAME on Transmit
+[            78377220] : TSK_PARSE_FRAME on Receive
+[            79217316] : TSK_PARSE_FRAME on Receive
+[            81985316] : TSK_PARSE_FRAME on Transmit
+[            82809220] : TSK_PARSE_FRAME on Transmit
+[            83225276] : TSK_PARSE_FRAME on Receive
+[            84065287] : TSK_PARSE_FRAME on Receive
+[            86833308] : TSK_PARSE_FRAME on Transmit
+[            87657264] : TSK_PARSE_FRAME on Transmit
+[            88073316] : TSK_PARSE_FRAME on Receive
+[            88913220] : TSK_PARSE_FRAME on Receive
+[            91681194] : TSK_PARSE_FRAME on Transmit
+[            92505

@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SMAPX16
+Size               256M
+Start Address      0x00000000
+End Address        0x0FFFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0022522F    Oct  6 03:28:41 2020    F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit

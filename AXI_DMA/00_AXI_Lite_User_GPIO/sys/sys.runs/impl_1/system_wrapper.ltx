@@ -1,0 +1,1060 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "system_i/ila_0",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "5ABAB766ABA0516DAAD8C91AEEDBF1FD",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "system_i/GPIO_LITE_ML_0_GPIO_LED",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/GPIO_LITE_ML_0_GPIO_LED[3]"
+                                            },
+                                            {
+                                                "name": "system_i/GPIO_LITE_ML_0_GPIO_LED[2]"
+                                            },
+                                            {
+                                                "name": "system_i/GPIO_LITE_ML_0_GPIO_LED[1]"
+                                            },
+                                            {
+                                                "name": "system_i/GPIO_LITE_ML_0_GPIO_LED[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "system_i/system_ila_0/inst/ila_lib",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "45D3035BFE745890A869ED7D93CDA129",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_ar_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_ar_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_ar_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_araddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_araddr[4]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_araddr[3]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_araddr[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_araddr[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_araddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_arprot",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_arprot[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_arprot[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_arprot[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_aw_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_aw_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_aw_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_awaddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awaddr[4]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awaddr[3]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awaddr[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awaddr[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awaddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_awprot",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awprot[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awprot[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_awprot[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_b_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_b_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_b_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_bresp",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_bresp[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_bresp[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_r_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_r_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_r_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[31]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[30]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[29]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[28]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[27]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[26]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[25]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[24]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[23]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[22]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[21]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[20]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[19]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[18]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[17]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[16]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[15]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[14]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[13]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[12]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[11]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[10]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[9]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[8]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[7]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[6]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[5]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[4]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[3]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_rresp",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rresp[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_rresp[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[31]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[30]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[29]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[28]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[27]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[26]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[25]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[24]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[23]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[22]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[21]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[20]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[19]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[18]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[17]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[16]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[15]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[14]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[13]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[12]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[11]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[10]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[9]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[8]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[7]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[6]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[5]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[4]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[3]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_wstrb",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wstrb[3]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wstrb[2]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wstrb[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_wstrb[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_aw_ctrl[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_w_ctrl",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_w_ctrl[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_w_ctrl[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_b_ctrl",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_b_ctrl[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_b_ctrl[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_ar_ctrl[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe17",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 17,
+                                "nets": [
+                                    {
+                                        "name": "system_i/system_ila_0/inst/net_slot_0_axi_r_ctrl",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_r_ctrl[1]"
+                                            },
+                                            {
+                                                "name": "system_i/system_ila_0/inst/net_slot_0_axi_r_ctrl[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "bus_interfaces": [
+                            {
+                                "name": "SLOT_0_AXI",
+                                "vlnv": "xilinx.com:interface:aximm:1.0",
+                                "connectedBus": "ps7_0_axi_periph_M01_AXI",
+                                "protocol": "AXI4LITE",
+                                "port_maps": [
+                                    {
+                                        "logical_port": "ARADDR",
+                                        "physical_pin": {
+                                            "id": 2,
+                                            "name": "probe1",
+                                            "leftBit": 0,
+                                            "width": 5
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "ARPROT",
+                                        "physical_pin": {
+                                            "id": 3,
+                                            "name": "probe2",
+                                            "leftBit": 0,
+                                            "width": 3
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "ARREADY",
+                                        "physical_pin": {
+                                            "id": 17,
+                                            "name": "probe16",
+                                            "leftBit": 1,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "ARVALID",
+                                        "physical_pin": {
+                                            "id": 17,
+                                            "name": "probe16",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "AWADDR",
+                                        "physical_pin": {
+                                            "id": 5,
+                                            "name": "probe4",
+                                            "leftBit": 0,
+                                            "width": 5
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "AWPROT",
+                                        "physical_pin": {
+                                            "id": 6,
+                                            "name": "probe5",
+                                            "leftBit": 0,
+                                            "width": 3
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "AWREADY",
+                                        "physical_pin": {
+                                            "id": 14,
+                                            "name": "probe13",
+                                            "leftBit": 1,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "AWVALID",
+                                        "physical_pin": {
+                                            "id": 14,
+                                            "name": "probe13",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "BREADY",
+                                        "physical_pin": {
+                                            "id": 16,
+                                            "name": "probe15",
+                                            "leftBit": 1,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "BRESP",
+                                        "physical_pin": {
+                                            "id": 8,
+                                            "name": "probe7",
+                                            "leftBit": 0,
+                                            "width": 2
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "BVALID",
+                                        "physical_pin": {
+                                            "id": 16,
+                                            "name": "probe15",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "RDATA",
+                                        "physical_pin": {
+                                            "id": 10,
+                                            "name": "probe9",
+                                            "leftBit": 0,
+                                            "width": 32
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "RREADY",
+                                        "physical_pin": {
+                                            "id": 18,
+                                            "name": "probe17",
+                                            "leftBit": 1,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "RRESP",
+                                        "physical_pin": {
+                                            "id": 11,
+                                            "name": "probe10",
+                                            "leftBit": 0,
+                                            "width": 2
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "RVALID",
+                                        "physical_pin": {
+                                            "id": 18,
+                                            "name": "probe17",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "WDATA",
+                                        "physical_pin": {
+                                            "id": 12,
+                                            "name": "probe11",
+                                            "leftBit": 0,
+                                            "width": 32
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "WREADY",
+                                        "physical_pin": {
+                                            "id": 15,
+                                            "name": "probe14",
+                                            "leftBit": 1,
+                                            "width": 1
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "WSTRB",
+                                        "physical_pin": {
+                                            "id": 13,
+                                            "name": "probe12",
+                                            "leftBit": 0,
+                                            "width": 4
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "WVALID",
+                                        "physical_pin": {
+                                            "id": 15,
+                                            "name": "probe14",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "system_i/vio_0",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 2,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "D3CF4C904AE759D498F9C553B9260AFE",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 19,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 8,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "system_i/math_ip_0_result",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/math_ip_0_result[8]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[7]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[6]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[5]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[4]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[3]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[2]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[1]"
+                                            },
+                                            {
+                                                "name": "system_i/math_ip_0_result[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 20,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "system_i/vio_0_probe_out0",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 21,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "system_i/vio_0_probe_out1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[7]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[6]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[5]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[4]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[3]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[2]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[1]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 22,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "system_i/vio_0_probe_out2",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[7]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[6]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[5]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[4]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[3]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[2]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[1]"
+                                            },
+                                            {
+                                                "name": "system_i/vio_0_probe_out2[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

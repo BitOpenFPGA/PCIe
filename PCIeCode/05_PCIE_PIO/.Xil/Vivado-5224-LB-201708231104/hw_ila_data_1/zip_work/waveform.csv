@@ -1,0 +1,1 @@
+Sample in Buffer,Sample in Window,TRIGGER,app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid,app/PIO/PIO_EP_inst/EP_RX_inst/state[7:0],app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[63:0],app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[7:0],app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tlast,app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid_1,app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tready

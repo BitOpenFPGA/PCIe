@@ -1,0 +1,24 @@
+14:54:56 **** Auto Build of configuration Debug for project GPIO_Test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_Test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:18:22: error: 'XPAR_MATH_IP_0_BASEADDR' undeclared (first use in this function)
+ #define MATH_IP_BASE XPAR_MATH_IP_0_BASEADDR
+                      ^
+../src/main.c:27:13: note: in expansion of macro 'MATH_IP_BASE'
+   Xil_Out32(MATH_IP_BASE+MATH_REG0,0X42);
+             ^~~~~~~~~~~~
+../src/main.c:18:22: note: each undeclared identifier is reported only once for each function it appears in
+ #define MATH_IP_BASE XPAR_MATH_IP_0_BASEADDR
+                      ^
+../src/main.c:27:13: note: in expansion of macro 'MATH_IP_BASE'
+   Xil_Out32(MATH_IP_BASE+MATH_REG0,0X42);
+             ^~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+
+14:54:58 Build Finished (took 2s.41ms)
+

@@ -1,0 +1,1807 @@
+17:59:03 INFO  : Registering command handlers for SDK TCF services
+17:59:04 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+17:59:06 INFO  : XSCT server has started successfully.
+17:59:06 INFO  : Successfully done setting XSCT server connection channel  
+17:59:07 INFO  : Successfully done setting SDK workspace  
+17:59:07 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+18:06:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:07:00 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+18:07:00 INFO  : 'jtag frequency' command is executed.
+18:07:00 INFO  : Sourcing of 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:07:00 INFO  : Context for 'APU' is selected.
+18:07:00 INFO  : System reset is completed.
+18:07:03 INFO  : 'after 3000' command is executed.
+18:07:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+18:07:07 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+18:07:07 INFO  : Context for 'APU' is selected.
+18:07:07 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:07:07 INFO  : 'configparams force-mem-access 1' command is executed.
+18:07:07 INFO  : Context for 'APU' is selected.
+18:07:07 INFO  : 'ps7_init' command is executed.
+18:07:07 INFO  : 'ps7_post_config' command is executed.
+18:07:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:07 INFO  : The application 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:07:07 INFO  : 'configparams force-mem-access 0' command is executed.
+18:07:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:07:07 INFO  : Memory regions updated for context APU
+18:07:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:07:07 INFO  : 'con' command is executed.
+18:07:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+18:07:07 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+18:08:08 INFO  : Disconnected from the channel tcfchan#1.
+18:08:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:09 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+18:08:09 INFO  : 'jtag frequency' command is executed.
+18:08:09 INFO  : Sourcing of 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:08:09 INFO  : Context for 'APU' is selected.
+18:08:09 INFO  : System reset is completed.
+18:08:12 INFO  : 'after 3000' command is executed.
+18:08:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+18:08:16 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+18:08:16 INFO  : Context for 'APU' is selected.
+18:08:17 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:08:17 INFO  : 'configparams force-mem-access 1' command is executed.
+18:08:17 INFO  : Context for 'APU' is selected.
+18:08:18 INFO  : 'ps7_init' command is executed.
+18:08:18 INFO  : 'ps7_post_config' command is executed.
+18:08:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:08:18 INFO  : The application 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:08:18 INFO  : 'configparams force-mem-access 0' command is executed.
+18:08:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:08:18 INFO  : Memory regions updated for context APU
+18:08:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:08:18 INFO  : 'con' command is executed.
+18:08:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+18:08:18 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+18:09:56 INFO  : Disconnected from the channel tcfchan#2.
+10:28:43 INFO  : Registering command handlers for SDK TCF services
+10:28:43 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+10:28:50 INFO  : XSCT server has started successfully.
+10:28:50 INFO  : Successfully done setting XSCT server connection channel  
+10:28:52 INFO  : Successfully done setting SDK workspace  
+10:28:52 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+10:28:52 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+10:31:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:07 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+10:31:07 INFO  : 'jtag frequency' command is executed.
+10:31:07 INFO  : Sourcing of 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:31:07 INFO  : Context for 'APU' is selected.
+10:31:07 INFO  : System reset is completed.
+10:31:10 INFO  : 'after 3000' command is executed.
+10:31:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+10:31:14 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:31:14 INFO  : Context for 'APU' is selected.
+10:31:14 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:31:14 INFO  : 'configparams force-mem-access 1' command is executed.
+10:31:14 INFO  : Context for 'APU' is selected.
+10:31:14 INFO  : 'ps7_init' command is executed.
+10:31:14 INFO  : 'ps7_post_config' command is executed.
+10:31:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:14 INFO  : The application 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:14 INFO  : 'configparams force-mem-access 0' command is executed.
+10:31:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:31:14 INFO  : Memory regions updated for context APU
+10:31:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:14 INFO  : 'con' command is executed.
+10:31:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+10:31:14 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+10:34:36 INFO  : Disconnected from the channel tcfchan#1.
+10:42:01 INFO  : Registering command handlers for SDK TCF services
+10:42:01 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+10:42:04 INFO  : XSCT server has started successfully.
+10:42:04 INFO  : Successfully done setting XSCT server connection channel  
+10:42:04 INFO  : Successfully done setting SDK workspace  
+10:42:04 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+10:42:04 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+10:42:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1526006451511,  Project:1525946211596
+10:42:06 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+10:42:06 INFO  : Copied contents of F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+10:42:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:42:16 INFO  : 
+10:42:17 INFO  : Updating hardware inferred compiler options for GPIO_Test.
+10:42:17 INFO  : Clearing existing target manager status.
+10:42:17 WARN  : Given IPC port value is invalid. Using default port 2350
+10:42:17 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+10:42:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+10:42:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:36 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+10:42:36 INFO  : 'jtag frequency' command is executed.
+10:42:36 INFO  : Sourcing of 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:42:37 INFO  : Context for 'APU' is selected.
+10:42:37 INFO  : System reset is completed.
+10:42:40 INFO  : 'after 3000' command is executed.
+10:42:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+10:42:43 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:42:43 INFO  : Context for 'APU' is selected.
+10:42:43 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:42:43 INFO  : 'configparams force-mem-access 1' command is executed.
+10:42:43 INFO  : Context for 'APU' is selected.
+10:42:44 INFO  : 'ps7_init' command is executed.
+10:42:44 INFO  : 'ps7_post_config' command is executed.
+10:42:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:44 INFO  : The application 'F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:42:44 INFO  : 'configparams force-mem-access 0' command is executed.
+10:42:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH10_User_GPIO/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:42:44 INFO  : Memory regions updated for context APU
+10:42:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:44 INFO  : 'con' command is executed.
+10:42:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+10:42:44 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH10_User_GPIO\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+10:43:23 INFO  : Disconnected from the channel tcfchan#1.
+10:43:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:11:27 INFO  : Registering command handlers for SDK TCF services
+14:11:28 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+14:11:31 INFO  : XSCT server has started successfully.
+14:11:31 INFO  : Successfully done setting XSCT server connection channel  
+14:11:31 INFO  : Successfully done setting SDK workspace  
+14:11:31 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+14:13:04 INFO  : Registering command handlers for SDK TCF services
+14:13:05 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+14:13:15 INFO  : XSCT server has started successfully.
+14:13:15 INFO  : Successfully done setting XSCT server connection channel  
+14:13:15 INFO  : Successfully done setting SDK workspace  
+14:13:15 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+14:13:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:47 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+14:13:47 INFO  : 'jtag frequency' command is executed.
+14:13:47 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:13:47 INFO  : Context for 'APU' is selected.
+14:13:47 INFO  : System reset is completed.
+14:13:50 INFO  : 'after 3000' command is executed.
+14:13:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+14:13:54 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:13:54 INFO  : Context for 'APU' is selected.
+14:13:54 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:13:54 INFO  : 'configparams force-mem-access 1' command is executed.
+14:13:54 INFO  : Context for 'APU' is selected.
+14:13:54 INFO  : 'ps7_init' command is executed.
+14:13:54 INFO  : 'ps7_post_config' command is executed.
+14:13:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:55 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:13:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:13:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:13:55 INFO  : Memory regions updated for context APU
+14:13:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:13:55 INFO  : 'con' command is executed.
+14:13:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+14:13:55 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+14:40:14 INFO  : Disconnected from the channel tcfchan#1.
+14:40:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:15 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+14:40:15 INFO  : 'jtag frequency' command is executed.
+14:40:15 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:40:15 INFO  : Context for 'APU' is selected.
+14:40:15 INFO  : System reset is completed.
+14:40:18 INFO  : 'after 3000' command is executed.
+14:40:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+14:40:21 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:40:22 INFO  : Context for 'APU' is selected.
+14:40:23 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:40:23 INFO  : 'configparams force-mem-access 1' command is executed.
+14:40:23 INFO  : Context for 'APU' is selected.
+14:40:24 INFO  : 'ps7_init' command is executed.
+14:40:24 INFO  : 'ps7_post_config' command is executed.
+14:40:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:24 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:40:24 INFO  : 'configparams force-mem-access 0' command is executed.
+14:40:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:40:24 INFO  : Memory regions updated for context APU
+14:40:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:24 INFO  : 'con' command is executed.
+14:40:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+14:40:24 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+14:42:55 INFO  : Disconnected from the channel tcfchan#2.
+14:45:28 INFO  : Registering command handlers for SDK TCF services
+14:45:28 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+14:45:31 INFO  : XSCT server has started successfully.
+14:45:32 INFO  : Successfully done setting XSCT server connection channel  
+14:45:32 INFO  : Successfully done setting SDK workspace  
+14:45:32 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+14:45:32 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+14:45:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:44 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+14:45:44 INFO  : 'jtag frequency' command is executed.
+14:45:44 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:45:44 INFO  : Context for 'APU' is selected.
+14:45:45 INFO  : System reset is completed.
+14:45:48 INFO  : 'after 3000' command is executed.
+14:45:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+14:45:51 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:45:51 INFO  : Context for 'APU' is selected.
+14:45:51 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:45:51 INFO  : 'configparams force-mem-access 1' command is executed.
+14:45:51 INFO  : Context for 'APU' is selected.
+14:45:51 INFO  : 'ps7_init' command is executed.
+14:45:51 INFO  : 'ps7_post_config' command is executed.
+14:45:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:52 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:45:52 INFO  : 'configparams force-mem-access 0' command is executed.
+14:45:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/GPIO_Test/Debug/GPIO_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:45:52 INFO  : Memory regions updated for context APU
+14:45:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:52 INFO  : 'con' command is executed.
+14:45:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+14:45:52 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_test.elf_on_local.tcl'
+14:55:32 INFO  : Disconnected from the channel tcfchan#1.
+14:56:52 INFO  : Registering command handlers for SDK TCF services
+14:56:52 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+14:56:56 INFO  : XSCT server has started successfully.
+14:56:56 INFO  : Successfully done setting XSCT server connection channel  
+14:56:56 INFO  : Successfully done setting SDK workspace  
+14:56:56 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+14:58:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:58:56 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+14:58:56 INFO  : 'jtag frequency' command is executed.
+14:58:56 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:58:56 INFO  : Context for 'APU' is selected.
+14:58:56 INFO  : System reset is completed.
+14:58:59 INFO  : 'after 3000' command is executed.
+14:58:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+14:59:03 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:59:03 INFO  : Context for 'APU' is selected.
+14:59:03 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:59:03 INFO  : 'configparams force-mem-access 1' command is executed.
+14:59:03 INFO  : Context for 'APU' is selected.
+14:59:03 INFO  : 'ps7_init' command is executed.
+14:59:03 INFO  : 'ps7_post_config' command is executed.
+14:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:03 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:59:03 INFO  : 'configparams force-mem-access 0' command is executed.
+14:59:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:59:03 INFO  : Memory regions updated for context APU
+14:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:59:04 INFO  : 'con' command is executed.
+14:59:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+14:59:04 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+15:12:36 INFO  : Disconnected from the channel tcfchan#1.
+15:12:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:37 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+15:12:37 INFO  : 'jtag frequency' command is executed.
+15:12:37 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:12:37 INFO  : Context for 'APU' is selected.
+15:12:37 INFO  : System reset is completed.
+15:12:40 INFO  : 'after 3000' command is executed.
+15:12:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+15:12:44 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:12:44 INFO  : Context for 'APU' is selected.
+15:12:45 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:12:45 INFO  : 'configparams force-mem-access 1' command is executed.
+15:12:45 INFO  : Context for 'APU' is selected.
+15:12:46 INFO  : 'ps7_init' command is executed.
+15:12:46 INFO  : 'ps7_post_config' command is executed.
+15:12:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:46 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:12:46 INFO  : 'configparams force-mem-access 0' command is executed.
+15:12:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:12:46 INFO  : Memory regions updated for context APU
+15:12:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:12:46 INFO  : 'con' command is executed.
+15:12:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+15:12:46 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+15:25:24 INFO  : Disconnected from the channel tcfchan#2.
+15:46:06 INFO  : Registering command handlers for SDK TCF services
+15:46:06 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+15:46:07 INFO  : XSCT server has started successfully.
+15:46:07 INFO  : Successfully done setting XSCT server connection channel  
+15:46:08 INFO  : Successfully done setting SDK workspace  
+15:46:08 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+15:46:08 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+15:46:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:46:36 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+15:46:36 INFO  : 'jtag frequency' command is executed.
+15:46:36 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:46:36 INFO  : Context for 'APU' is selected.
+15:46:37 INFO  : System reset is completed.
+15:46:40 INFO  : 'after 3000' command is executed.
+15:46:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+15:46:43 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+15:46:43 INFO  : Context for 'APU' is selected.
+15:46:43 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:46:43 INFO  : 'configparams force-mem-access 1' command is executed.
+15:46:43 INFO  : Context for 'APU' is selected.
+15:46:44 INFO  : 'ps7_init' command is executed.
+15:46:44 INFO  : 'ps7_post_config' command is executed.
+15:46:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:44 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:46:44 INFO  : 'configparams force-mem-access 0' command is executed.
+15:46:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:46:44 INFO  : Memory regions updated for context APU
+15:46:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:46:44 INFO  : 'con' command is executed.
+15:46:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+15:46:44 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+16:03:04 INFO  : Disconnected from the channel tcfchan#1.
+16:03:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:03:05 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+16:03:05 INFO  : 'jtag frequency' command is executed.
+16:03:05 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:03:05 INFO  : Context for 'APU' is selected.
+16:03:05 INFO  : System reset is completed.
+16:03:08 INFO  : 'after 3000' command is executed.
+16:03:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+16:03:12 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+16:03:12 INFO  : Context for 'APU' is selected.
+16:03:14 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+16:03:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:03:14 INFO  : Context for 'APU' is selected.
+16:03:15 INFO  : 'ps7_init' command is executed.
+16:03:15 INFO  : 'ps7_post_config' command is executed.
+16:03:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:03:15 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:03:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:03:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:03:15 INFO  : Memory regions updated for context APU
+16:03:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:03:15 INFO  : 'con' command is executed.
+16:03:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+16:03:15 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+16:07:20 INFO  : Disconnected from the channel tcfchan#2.
+16:07:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:21 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+16:07:21 INFO  : 'jtag frequency' command is executed.
+16:07:21 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:07:21 INFO  : Context for 'APU' is selected.
+16:07:21 INFO  : System reset is completed.
+16:07:24 INFO  : 'after 3000' command is executed.
+16:07:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+16:07:28 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+16:07:28 INFO  : Context for 'APU' is selected.
+16:07:30 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+16:07:30 INFO  : 'configparams force-mem-access 1' command is executed.
+16:07:30 INFO  : Context for 'APU' is selected.
+16:07:30 INFO  : 'ps7_init' command is executed.
+16:07:30 INFO  : 'ps7_post_config' command is executed.
+16:07:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:07:30 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:07:30 INFO  : 'configparams force-mem-access 0' command is executed.
+16:07:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:07:30 INFO  : Memory regions updated for context APU
+16:07:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:07:30 INFO  : 'con' command is executed.
+16:07:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+16:07:30 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+16:10:04 INFO  : Disconnected from the channel tcfchan#3.
+20:45:32 INFO  : Registering command handlers for SDK TCF services
+20:45:33 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+20:45:36 INFO  : XSCT server has started successfully.
+20:45:36 INFO  : Successfully done setting XSCT server connection channel  
+20:45:36 INFO  : Successfully done setting SDK workspace  
+20:45:36 INFO  : Processing command line option -hwspec F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+20:45:36 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+20:46:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:46:10 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+20:46:10 INFO  : 'jtag frequency' command is executed.
+20:46:10 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:46:10 INFO  : Context for 'APU' is selected.
+20:46:10 INFO  : System reset is completed.
+20:46:13 INFO  : 'after 3000' command is executed.
+20:46:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+20:46:17 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:46:17 INFO  : Context for 'APU' is selected.
+20:46:17 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:46:17 INFO  : 'configparams force-mem-access 1' command is executed.
+20:46:17 INFO  : Context for 'APU' is selected.
+20:46:17 INFO  : 'ps7_init' command is executed.
+20:46:17 INFO  : 'ps7_post_config' command is executed.
+20:46:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:46:18 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:46:18 INFO  : 'configparams force-mem-access 0' command is executed.
+20:46:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:46:18 INFO  : Memory regions updated for context APU
+20:46:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:46:18 INFO  : 'con' command is executed.
+20:46:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+20:46:18 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+20:47:36 INFO  : Disconnected from the channel tcfchan#1.
+20:47:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:47:37 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+20:47:37 INFO  : 'jtag frequency' command is executed.
+20:47:37 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:47:37 INFO  : Context for 'APU' is selected.
+20:47:37 INFO  : System reset is completed.
+20:47:40 INFO  : 'after 3000' command is executed.
+20:47:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+20:47:44 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:47:44 INFO  : Context for 'APU' is selected.
+20:47:45 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:47:45 INFO  : 'configparams force-mem-access 1' command is executed.
+20:47:45 INFO  : Context for 'APU' is selected.
+20:47:46 INFO  : 'ps7_init' command is executed.
+20:47:46 INFO  : 'ps7_post_config' command is executed.
+20:47:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:47:46 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:47:46 INFO  : 'configparams force-mem-access 0' command is executed.
+20:47:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:47:46 INFO  : Memory regions updated for context APU
+20:47:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:47:46 INFO  : 'con' command is executed.
+20:47:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+20:47:46 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+20:47:57 INFO  : Disconnected from the channel tcfchan#2.
+20:47:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:47:58 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+20:47:58 INFO  : 'jtag frequency' command is executed.
+20:47:58 INFO  : Sourcing of 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:47:58 INFO  : Context for 'APU' is selected.
+20:47:58 INFO  : System reset is completed.
+20:48:01 INFO  : 'after 3000' command is executed.
+20:48:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+20:48:05 INFO  : FPGA configured successfully with bitstream "F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+20:48:05 INFO  : Context for 'APU' is selected.
+20:48:06 INFO  : Hardware design information is loaded from 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:48:06 INFO  : 'configparams force-mem-access 1' command is executed.
+20:48:06 INFO  : Context for 'APU' is selected.
+20:48:07 INFO  : 'ps7_init' command is executed.
+20:48:07 INFO  : 'ps7_post_config' command is executed.
+20:48:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:48:07 INFO  : The application 'F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:48:07 INFO  : 'configparams force-mem-access 0' command is executed.
+20:48:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow F:/Board/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:48:07 INFO  : Memory regions updated for context APU
+20:48:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:48:07 INFO  : 'con' command is executed.
+20:48:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+20:48:07 INFO  : Launch script is exported to file 'F:\Board\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+20:51:39 INFO  : Disconnected from the channel tcfchan#3.
+14:51:24 INFO  : Registering command handlers for SDK TCF services
+14:51:25 INFO  : Launching XSCT server: xsct.bat -interactive E:\jc\xinde\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+14:51:30 INFO  : XSCT server has started successfully.
+14:51:31 INFO  : Successfully done setting XSCT server connection channel  
+14:51:31 INFO  : Successfully done setting SDK workspace  
+14:51:31 INFO  : Processing command line option -hwspec E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+14:53:44 INFO  : Launching XSCT server: xsct.bat -interactive E:\jc\xinde\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+14:53:46 INFO  : XSCT server has started successfully.
+14:53:46 INFO  : Successfully done setting XSCT server connection channel  
+14:53:46 INFO  : Successfully done setting SDK workspace  
+14:53:48 INFO  : Registering command handlers for SDK TCF services
+14:53:48 INFO  : Processing command line option -hwspec E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+14:54:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:27 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854672' is selected.
+14:54:27 INFO  : 'jtag frequency' command is executed.
+14:54:27 INFO  : Sourcing of 'E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:54:27 INFO  : Context for 'APU' is selected.
+14:54:27 INFO  : System reset is completed.
+14:54:30 INFO  : 'after 3000' command is executed.
+14:54:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1' command is executed.
+14:54:34 INFO  : FPGA configured successfully with bitstream "E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+14:54:34 INFO  : Context for 'APU' is selected.
+14:54:34 INFO  : Hardware design information is loaded from 'E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+14:54:34 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:34 INFO  : Context for 'APU' is selected.
+14:54:35 INFO  : 'ps7_init' command is executed.
+14:54:35 INFO  : 'ps7_post_config' command is executed.
+14:54:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:35 INFO  : The application 'E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854672" && level==0} -index 1
+fpga -file E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+loadhw -hw E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+dow E:/jc/xinde/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:35 INFO  : Memory regions updated for context APU
+14:54:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:35 INFO  : 'con' command is executed.
+14:54:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854672"} -index 0
+con
+----------------End of Script----------------
+
+14:54:35 INFO  : Launch script is exported to file 'E:\jc\xinde\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+14:58:39 INFO  : Disconnected from the channel tcfchan#1.
+21:06:09 INFO  : Registering command handlers for SDK TCF services
+21:06:10 INFO  : Launching XSCT server: xsct.bat -interactive F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+21:06:11 INFO  : XSCT server has started successfully.
+21:06:11 INFO  : Successfully done setting XSCT server connection channel  
+21:06:11 INFO  : Successfully done setting SDK workspace  
+21:06:11 INFO  : Processing command line option -hwspec F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+21:25:21 INFO  : Registering command handlers for SDK TCF services
+21:25:21 INFO  : Launching XSCT server: xsct.bat -interactive F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+21:25:22 INFO  : XSCT server has started successfully.
+21:25:23 INFO  : Successfully done setting XSCT server connection channel  
+21:25:23 INFO  : Successfully done setting SDK workspace  
+21:25:23 INFO  : Processing command line option -hwspec F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+21:25:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:25:42 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+21:25:42 INFO  : 'jtag frequency' command is executed.
+21:25:42 INFO  : Sourcing of 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:25:42 INFO  : Context for 'APU' is selected.
+21:25:42 INFO  : System reset is completed.
+21:25:45 INFO  : 'after 3000' command is executed.
+21:25:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+21:26:00 INFO  : FPGA configured successfully with bitstream "F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+21:26:00 INFO  : Context for 'APU' is selected.
+21:26:00 INFO  : Hardware design information is loaded from 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+21:26:00 INFO  : 'configparams force-mem-access 1' command is executed.
+21:26:00 INFO  : Context for 'APU' is selected.
+21:26:00 INFO  : 'ps7_init' command is executed.
+21:26:00 INFO  : 'ps7_post_config' command is executed.
+21:26:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:26:01 INFO  : The application 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:26:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:26:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:26:01 INFO  : Memory regions updated for context APU
+21:26:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:26:01 INFO  : 'con' command is executed.
+21:26:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+21:26:01 INFO  : Launch script is exported to file 'F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+22:10:10 INFO  : Disconnected from the channel tcfchan#1.
+22:16:49 INFO  : Registering command handlers for SDK TCF services
+22:16:49 INFO  : Launching XSCT server: xsct.bat -interactive F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+22:16:50 INFO  : XSCT server has started successfully.
+22:16:50 INFO  : Successfully done setting XSCT server connection channel  
+22:16:51 INFO  : Successfully done setting SDK workspace  
+22:16:51 INFO  : Processing command line option -hwspec F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+22:16:51 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+22:17:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:17:57 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+22:17:57 INFO  : 'jtag frequency' command is executed.
+22:17:57 INFO  : Sourcing of 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:17:57 INFO  : Context for 'APU' is selected.
+22:17:57 INFO  : System reset is completed.
+22:18:00 INFO  : 'after 3000' command is executed.
+22:18:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+22:18:15 INFO  : FPGA configured successfully with bitstream "F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+22:18:15 INFO  : Context for 'APU' is selected.
+22:18:15 INFO  : Hardware design information is loaded from 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+22:18:15 INFO  : 'configparams force-mem-access 1' command is executed.
+22:18:15 INFO  : Context for 'APU' is selected.
+22:18:15 INFO  : 'ps7_init' command is executed.
+22:18:16 INFO  : 'ps7_post_config' command is executed.
+22:18:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:16 INFO  : The application 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:18:16 INFO  : 'configparams force-mem-access 0' command is executed.
+22:18:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:18:16 INFO  : Memory regions updated for context APU
+22:18:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:16 INFO  : 'con' command is executed.
+22:18:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+22:18:16 INFO  : Launch script is exported to file 'F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+22:18:45 INFO  : Disconnected from the channel tcfchan#1.
+22:18:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:46 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+22:18:46 INFO  : 'jtag frequency' command is executed.
+22:18:46 INFO  : Sourcing of 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:18:46 INFO  : Context for 'APU' is selected.
+22:18:46 INFO  : System reset is completed.
+22:18:49 INFO  : 'after 3000' command is executed.
+22:18:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+22:19:04 INFO  : FPGA configured successfully with bitstream "F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+22:19:04 INFO  : Context for 'APU' is selected.
+22:19:06 INFO  : Hardware design information is loaded from 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+22:19:06 INFO  : 'configparams force-mem-access 1' command is executed.
+22:19:06 INFO  : Context for 'APU' is selected.
+22:19:06 INFO  : 'ps7_init' command is executed.
+22:19:06 INFO  : 'ps7_post_config' command is executed.
+22:19:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:07 INFO  : The application 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:07 INFO  : 'configparams force-mem-access 0' command is executed.
+22:19:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:19:07 INFO  : Memory regions updated for context APU
+22:19:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:07 INFO  : 'con' command is executed.
+22:19:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+22:19:07 INFO  : Launch script is exported to file 'F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+22:22:22 INFO  : Disconnected from the channel tcfchan#2.
+22:27:12 INFO  : Registering command handlers for SDK TCF services
+22:27:13 INFO  : Launching XSCT server: xsct.bat -interactive F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+22:27:14 INFO  : XSCT server has started successfully.
+22:27:14 INFO  : Successfully done setting XSCT server connection channel  
+22:27:14 INFO  : Successfully done setting SDK workspace  
+22:27:14 INFO  : Processing command line option -hwspec F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+22:27:14 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+22:27:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:35 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+22:27:35 INFO  : 'jtag frequency' command is executed.
+22:27:35 INFO  : Sourcing of 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:27:35 INFO  : Context for 'APU' is selected.
+22:27:35 INFO  : System reset is completed.
+22:27:38 INFO  : 'after 3000' command is executed.
+22:27:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+22:27:53 INFO  : FPGA configured successfully with bitstream "F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+22:27:53 INFO  : Context for 'APU' is selected.
+22:27:53 INFO  : Hardware design information is loaded from 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+22:27:53 INFO  : 'configparams force-mem-access 1' command is executed.
+22:27:53 INFO  : Context for 'APU' is selected.
+22:27:53 INFO  : 'ps7_init' command is executed.
+22:27:53 INFO  : 'ps7_post_config' command is executed.
+22:27:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:54 INFO  : The application 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:27:54 INFO  : 'configparams force-mem-access 0' command is executed.
+22:27:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:27:54 INFO  : Memory regions updated for context APU
+22:27:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:54 INFO  : 'con' command is executed.
+22:27:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+22:27:54 INFO  : Launch script is exported to file 'F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+22:35:45 INFO  : Disconnected from the channel tcfchan#1.
+23:39:19 INFO  : Registering command handlers for SDK TCF services
+23:39:19 INFO  : Launching XSCT server: xsct.bat -interactive F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+23:39:21 INFO  : XSCT server has started successfully.
+23:39:21 INFO  : Successfully done setting XSCT server connection channel  
+23:39:21 INFO  : Successfully done setting SDK workspace  
+23:39:21 INFO  : Processing command line option -hwspec F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+23:39:21 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+23:39:23 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528385921150,  Project:1528376631217
+23:39:23 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+23:39:23 INFO  : Copied contents of F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+23:39:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:39:28 INFO  : 
+23:39:29 INFO  : Updating hardware inferred compiler options for Debug_Test.
+23:39:29 INFO  : Clearing existing target manager status.
+23:39:29 WARN  : Given IPC port value is invalid. Using default port 2350
+23:39:29 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+23:39:30 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+23:39:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:39:48 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+23:39:48 INFO  : 'jtag frequency' command is executed.
+23:39:48 INFO  : Sourcing of 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:39:48 INFO  : Context for 'APU' is selected.
+23:39:48 INFO  : System reset is completed.
+23:39:51 INFO  : 'after 3000' command is executed.
+23:39:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+23:40:06 INFO  : FPGA configured successfully with bitstream "F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+23:40:06 INFO  : Context for 'APU' is selected.
+23:40:06 INFO  : Hardware design information is loaded from 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+23:40:06 INFO  : 'configparams force-mem-access 1' command is executed.
+23:40:06 INFO  : Context for 'APU' is selected.
+23:40:07 INFO  : 'ps7_init' command is executed.
+23:40:07 INFO  : 'ps7_post_config' command is executed.
+23:40:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:40:07 INFO  : The application 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:40:07 INFO  : 'configparams force-mem-access 0' command is executed.
+23:40:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:40:07 INFO  : Memory regions updated for context APU
+23:40:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:40:07 INFO  : 'con' command is executed.
+23:40:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+23:40:07 INFO  : Launch script is exported to file 'F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+23:48:31 INFO  : Disconnected from the channel tcfchan#1.
+23:48:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:48:32 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+23:48:32 INFO  : 'jtag frequency' command is executed.
+23:48:32 INFO  : Sourcing of 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:48:32 INFO  : Context for 'APU' is selected.
+23:48:32 INFO  : System reset is completed.
+23:48:35 INFO  : 'after 3000' command is executed.
+23:48:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+23:48:50 INFO  : FPGA configured successfully with bitstream "F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+23:48:50 INFO  : Context for 'APU' is selected.
+23:48:53 INFO  : Hardware design information is loaded from 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+23:48:53 INFO  : 'configparams force-mem-access 1' command is executed.
+23:48:53 INFO  : Context for 'APU' is selected.
+23:48:53 INFO  : 'ps7_init' command is executed.
+23:48:53 INFO  : 'ps7_post_config' command is executed.
+23:48:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:48:54 INFO  : The application 'F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:48:54 INFO  : 'configparams force-mem-access 0' command is executed.
+23:48:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:48:54 INFO  : Memory regions updated for context APU
+23:48:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:48:54 INFO  : 'con' command is executed.
+23:48:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+23:48:54 INFO  : Launch script is exported to file 'F:\MZ7100\CODE\S02\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+23:51:16 INFO  : Disconnected from the channel tcfchan#2.
+23:51:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:26:20 INFO  : Registering command handlers for SDK TCF services
+09:26:20 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+09:26:22 INFO  : XSCT server has started successfully.
+09:26:23 INFO  : Successfully done setting XSCT server connection channel  
+09:26:23 INFO  : Successfully done setting SDK workspace  
+09:26:23 INFO  : Processing command line option -hwspec F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+09:27:47 INFO  : Registering command handlers for SDK TCF services
+09:27:48 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+09:27:50 INFO  : XSCT server has started successfully.
+09:27:50 INFO  : Successfully done setting XSCT server connection channel  
+09:27:50 INFO  : Successfully done setting SDK workspace  
+09:27:50 INFO  : Processing command line option -hwspec F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+09:50:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:13 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+09:50:13 INFO  : 'jtag frequency' command is executed.
+09:50:13 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:50:13 INFO  : Context for 'APU' is selected.
+09:50:13 INFO  : System reset is completed.
+09:50:16 INFO  : 'after 3000' command is executed.
+09:50:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+09:50:27 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:50:27 INFO  : Context for 'APU' is selected.
+09:50:27 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:50:27 INFO  : 'configparams force-mem-access 1' command is executed.
+09:50:27 INFO  : Context for 'APU' is selected.
+09:50:28 INFO  : 'ps7_init' command is executed.
+09:50:28 INFO  : 'ps7_post_config' command is executed.
+09:50:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:50:28 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:50:28 INFO  : 'configparams force-mem-access 0' command is executed.
+09:50:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:50:28 INFO  : Memory regions updated for context APU
+09:50:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:50:28 INFO  : 'con' command is executed.
+09:50:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+09:50:28 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+09:54:22 INFO  : Disconnected from the channel tcfchan#1.
+09:54:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:23 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+09:54:23 INFO  : 'jtag frequency' command is executed.
+09:54:23 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:54:23 INFO  : Context for 'APU' is selected.
+09:54:23 INFO  : System reset is completed.
+09:54:26 INFO  : 'after 3000' command is executed.
+09:54:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+09:54:37 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:54:37 INFO  : Context for 'APU' is selected.
+09:54:40 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:54:40 INFO  : 'configparams force-mem-access 1' command is executed.
+09:54:40 INFO  : Context for 'APU' is selected.
+09:54:40 INFO  : 'ps7_init' command is executed.
+09:54:40 INFO  : 'ps7_post_config' command is executed.
+09:54:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:54:40 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:54:40 INFO  : 'configparams force-mem-access 0' command is executed.
+09:54:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:54:40 INFO  : Memory regions updated for context APU
+09:54:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:54:40 INFO  : 'con' command is executed.
+09:54:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+09:54:40 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:05:05 INFO  : Disconnected from the channel tcfchan#2.
+10:05:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:07 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:05:07 INFO  : 'jtag frequency' command is executed.
+10:05:07 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:05:07 INFO  : Context for 'APU' is selected.
+10:05:07 INFO  : System reset is completed.
+10:05:10 INFO  : 'after 3000' command is executed.
+10:05:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:05:21 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:05:21 INFO  : Context for 'APU' is selected.
+10:05:23 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:05:23 INFO  : 'configparams force-mem-access 1' command is executed.
+10:05:23 INFO  : Context for 'APU' is selected.
+10:05:24 INFO  : 'ps7_init' command is executed.
+10:05:24 INFO  : 'ps7_post_config' command is executed.
+10:05:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:24 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:05:24 INFO  : 'configparams force-mem-access 0' command is executed.
+10:05:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:05:24 INFO  : Memory regions updated for context APU
+10:05:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:24 INFO  : 'con' command is executed.
+10:05:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:05:24 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:14:36 INFO  : Disconnected from the channel tcfchan#3.
+10:14:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:14:38 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:14:38 INFO  : 'jtag frequency' command is executed.
+10:14:38 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:14:38 INFO  : Context for 'APU' is selected.
+10:14:38 INFO  : System reset is completed.
+10:14:41 INFO  : 'after 3000' command is executed.
+10:14:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:14:52 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:14:52 INFO  : Context for 'APU' is selected.
+10:14:54 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:14:54 INFO  : 'configparams force-mem-access 1' command is executed.
+10:14:54 INFO  : Context for 'APU' is selected.
+10:14:54 INFO  : 'ps7_init' command is executed.
+10:14:54 INFO  : 'ps7_post_config' command is executed.
+10:14:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:55 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:14:55 INFO  : 'configparams force-mem-access 0' command is executed.
+10:14:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:14:55 INFO  : Memory regions updated for context APU
+10:14:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:55 INFO  : 'con' command is executed.
+10:14:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:14:55 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:22:46 INFO  : Disconnected from the channel tcfchan#4.
+10:22:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:47 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:22:47 INFO  : 'jtag frequency' command is executed.
+10:22:47 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:22:47 INFO  : Context for 'APU' is selected.
+10:22:47 INFO  : System reset is completed.
+10:22:50 INFO  : 'after 3000' command is executed.
+10:22:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:23:01 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:23:01 INFO  : Context for 'APU' is selected.
+10:23:04 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:23:04 INFO  : 'configparams force-mem-access 1' command is executed.
+10:23:04 INFO  : Context for 'APU' is selected.
+10:23:04 INFO  : 'ps7_init' command is executed.
+10:23:04 INFO  : 'ps7_post_config' command is executed.
+10:23:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:04 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:23:04 INFO  : 'configparams force-mem-access 0' command is executed.
+10:23:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:23:04 INFO  : Memory regions updated for context APU
+10:23:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:04 INFO  : 'con' command is executed.
+10:23:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:23:04 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:40:42 INFO  : Disconnected from the channel tcfchan#5.
+10:40:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:43 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:40:43 INFO  : 'jtag frequency' command is executed.
+10:40:43 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:40:43 INFO  : Context for 'APU' is selected.
+10:40:43 INFO  : System reset is completed.
+10:40:46 INFO  : 'after 3000' command is executed.
+10:40:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:40:57 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:40:57 INFO  : Context for 'APU' is selected.
+10:41:00 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:41:00 INFO  : 'configparams force-mem-access 1' command is executed.
+10:41:00 INFO  : Context for 'APU' is selected.
+10:41:00 INFO  : 'ps7_init' command is executed.
+10:41:00 INFO  : 'ps7_post_config' command is executed.
+10:41:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:00 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:41:00 INFO  : 'configparams force-mem-access 0' command is executed.
+10:41:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:41:00 INFO  : Memory regions updated for context APU
+10:41:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:00 INFO  : 'con' command is executed.
+10:41:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:41:00 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:45:16 INFO  : Disconnected from the channel tcfchan#6.
+10:45:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:45:17 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:45:17 INFO  : 'jtag frequency' command is executed.
+10:45:17 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:45:18 INFO  : Context for 'APU' is selected.
+10:45:18 INFO  : System reset is completed.
+10:45:21 INFO  : 'after 3000' command is executed.
+10:45:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:45:32 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:45:32 INFO  : Context for 'APU' is selected.
+10:45:34 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:45:34 INFO  : 'configparams force-mem-access 1' command is executed.
+10:45:34 INFO  : Context for 'APU' is selected.
+10:45:35 INFO  : 'ps7_init' command is executed.
+10:45:35 INFO  : 'ps7_post_config' command is executed.
+10:45:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:35 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:45:35 INFO  : 'configparams force-mem-access 0' command is executed.
+10:45:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:45:35 INFO  : Memory regions updated for context APU
+10:45:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:45:35 INFO  : 'con' command is executed.
+10:45:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:45:35 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:46:02 INFO  : Disconnected from the channel tcfchan#7.
+10:46:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:04 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:46:04 INFO  : 'jtag frequency' command is executed.
+10:46:04 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:46:04 INFO  : Context for 'APU' is selected.
+10:46:04 INFO  : System reset is completed.
+10:46:07 INFO  : 'after 3000' command is executed.
+10:46:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:46:18 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:46:18 INFO  : Context for 'APU' is selected.
+10:46:21 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:46:21 INFO  : 'configparams force-mem-access 1' command is executed.
+10:46:21 INFO  : Context for 'APU' is selected.
+10:46:21 INFO  : 'ps7_init' command is executed.
+10:46:21 INFO  : 'ps7_post_config' command is executed.
+10:46:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:21 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:46:21 INFO  : 'configparams force-mem-access 0' command is executed.
+10:46:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:46:21 INFO  : Memory regions updated for context APU
+10:46:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:21 INFO  : 'con' command is executed.
+10:46:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:46:21 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:48:24 INFO  : Disconnected from the channel tcfchan#8.
+10:48:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:48:25 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:48:25 INFO  : 'jtag frequency' command is executed.
+10:48:25 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:48:25 INFO  : Context for 'APU' is selected.
+10:48:26 INFO  : System reset is completed.
+10:48:29 INFO  : 'after 3000' command is executed.
+10:48:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:48:40 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:48:40 INFO  : Context for 'APU' is selected.
+10:48:42 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:48:42 INFO  : 'configparams force-mem-access 1' command is executed.
+10:48:42 INFO  : Context for 'APU' is selected.
+10:48:43 INFO  : 'ps7_init' command is executed.
+10:48:43 INFO  : 'ps7_post_config' command is executed.
+10:48:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:43 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:48:43 INFO  : 'configparams force-mem-access 0' command is executed.
+10:48:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:48:43 INFO  : Memory regions updated for context APU
+10:48:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:43 INFO  : 'con' command is executed.
+10:48:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:48:43 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:49:17 INFO  : Disconnected from the channel tcfchan#9.
+10:49:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:19 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+10:49:19 INFO  : 'jtag frequency' command is executed.
+10:49:19 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:49:19 INFO  : Context for 'APU' is selected.
+10:49:19 INFO  : System reset is completed.
+10:49:22 INFO  : 'after 3000' command is executed.
+10:49:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+10:49:33 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+10:49:33 INFO  : Context for 'APU' is selected.
+10:49:36 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:49:36 INFO  : 'configparams force-mem-access 1' command is executed.
+10:49:36 INFO  : Context for 'APU' is selected.
+10:49:36 INFO  : 'ps7_init' command is executed.
+10:49:36 INFO  : 'ps7_post_config' command is executed.
+10:49:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:36 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:49:36 INFO  : 'configparams force-mem-access 0' command is executed.
+10:49:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:49:36 INFO  : Memory regions updated for context APU
+10:49:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:36 INFO  : 'con' command is executed.
+10:49:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+10:49:36 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+10:54:09 INFO  : Disconnected from the channel tcfchan#10.
+11:24:41 INFO  : Registering command handlers for SDK TCF services
+11:24:42 INFO  : Launching XSCT server: xsct.bat -interactive F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+11:24:43 INFO  : XSCT server has started successfully.
+11:24:43 INFO  : Successfully done setting XSCT server connection channel  
+11:24:43 INFO  : Successfully done setting SDK workspace  
+11:24:43 INFO  : Processing command line option -hwspec F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+11:24:43 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+11:24:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1530760032430,  Project:1530753652090
+11:24:46 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf.
+11:24:46 INFO  : Copied contents of F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+11:24:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:24:52 INFO  : 
+11:24:53 INFO  : Updating hardware inferred compiler options for Debug_Test.
+11:24:53 INFO  : Clearing existing target manager status.
+11:24:53 WARN  : Given IPC port value is invalid. Using default port 2350
+11:24:53 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+11:24:54 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+11:25:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:25:07 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856342' is selected.
+11:25:07 INFO  : 'jtag frequency' command is executed.
+11:25:07 INFO  : Sourcing of 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:25:07 INFO  : Context for 'APU' is selected.
+11:25:07 INFO  : System reset is completed.
+11:25:10 INFO  : 'after 3000' command is executed.
+11:25:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1' command is executed.
+11:25:22 INFO  : FPGA configured successfully with bitstream "F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+11:25:22 INFO  : Context for 'APU' is selected.
+11:25:22 INFO  : Hardware design information is loaded from 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:25:22 INFO  : 'configparams force-mem-access 1' command is executed.
+11:25:22 INFO  : Context for 'APU' is selected.
+11:25:22 INFO  : 'ps7_init' command is executed.
+11:25:22 INFO  : 'ps7_post_config' command is executed.
+11:25:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:22 INFO  : The application 'F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:25:22 INFO  : 'configparams force-mem-access 0' command is executed.
+11:25:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856342" && level==0} -index 1
+fpga -file F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+loadhw -hw F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+dow F:/Board/02_example_SOC_BASE/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:25:22 INFO  : Memory regions updated for context APU
+11:25:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:22 INFO  : 'con' command is executed.
+11:25:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856342"} -index 0
+con
+----------------End of Script----------------
+
+11:25:22 INFO  : Launch script is exported to file 'F:\Board\02_example_SOC_BASE\S02_CH11_AXI_Debug_Method\prj\Miz_sys\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+11:26:46 INFO  : Disconnected from the channel tcfchan#1.
+11:26:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:22:00 INFO  : Launching XSCT server: xsct.bat -interactive F:\FILE\FPGA\ZYNQ\PCIe\00_AXI_Lite_User_GPIO\sys\sys.sdk\temp_xsdb_launch_script.tcl
+03:22:05 INFO  : XSCT server has started successfully.
+03:22:05 INFO  : Successfully done setting XSCT server connection channel  
+03:22:12 INFO  : Successfully done setting SDK workspace  
+03:22:28 INFO  : Registering command handlers for SDK TCF services
+03:22:28 INFO  : Processing command line option -hwspec F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper.hdf.
+03:23:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:23:52 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856074' is selected.
+03:23:52 INFO  : 'jtag frequency' command is executed.
+03:23:52 INFO  : Sourcing of 'F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:23:53 INFO  : Context for 'APU' is selected.
+03:23:53 INFO  : System reset is completed.
+03:23:56 INFO  : 'after 3000' command is executed.
+03:23:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856074" && level==0} -index 1' command is executed.
+03:24:07 INFO  : FPGA configured successfully with bitstream "F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:24:07 INFO  : Context for 'APU' is selected.
+03:24:07 INFO  : Hardware design information is loaded from 'F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:24:07 INFO  : 'configparams force-mem-access 1' command is executed.
+03:24:07 INFO  : Context for 'APU' is selected.
+03:24:08 INFO  : 'ps7_init' command is executed.
+03:24:08 INFO  : 'ps7_post_config' command is executed.
+03:24:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:24:08 INFO  : The application 'F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:24:08 INFO  : 'configparams force-mem-access 0' command is executed.
+03:24:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856074" && level==0} -index 1
+fpga -file F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+loadhw -hw F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+dow F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:24:09 INFO  : Memory regions updated for context APU
+03:24:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:24:09 INFO  : 'con' command is executed.
+03:24:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+con
+----------------End of Script----------------
+
+03:24:09 INFO  : Launch script is exported to file 'F:\FILE\FPGA\ZYNQ\PCIe\00_AXI_Lite_User_GPIO\sys\sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+03:28:39 INFO  : Disconnected from the channel tcfchan#1.
+03:28:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:28:40 INFO  : Jtag cable 'Digilent JTAG-HS1 210249856074' is selected.
+03:28:40 INFO  : 'jtag frequency' command is executed.
+03:28:40 INFO  : Sourcing of 'F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:28:40 INFO  : Context for 'APU' is selected.
+03:28:40 INFO  : System reset is completed.
+03:28:43 INFO  : 'after 3000' command is executed.
+03:28:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856074" && level==0} -index 1' command is executed.
+03:28:54 INFO  : FPGA configured successfully with bitstream "F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:28:55 INFO  : Context for 'APU' is selected.
+03:28:57 INFO  : Hardware design information is loaded from 'F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:28:57 INFO  : 'configparams force-mem-access 1' command is executed.
+03:28:58 INFO  : Context for 'APU' is selected.
+03:28:58 INFO  : 'ps7_init' command is executed.
+03:28:58 INFO  : 'ps7_post_config' command is executed.
+03:28:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:28:58 INFO  : The application 'F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/Debug_Test/Debug/Debug_Test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:28:58 INFO  : 'configparams force-mem-access 0' command is executed.
+03:28:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249856074" && level==0} -index 1
+fpga -file F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+loadhw -hw F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+dow F:/FILE/FPGA/ZYNQ/PCIe/00_AXI_Lite_User_GPIO/sys/sys.sdk/Debug_Test/Debug/Debug_Test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:28:58 INFO  : Memory regions updated for context APU
+03:28:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:28:58 INFO  : 'con' command is executed.
+03:28:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249856074"} -index 0
+con
+----------------End of Script----------------
+
+03:28:58 INFO  : Launch script is exported to file 'F:\FILE\FPGA\ZYNQ\PCIe\00_AXI_Lite_User_GPIO\sys\sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_debug_test.elf_on_local.tcl'
+04:07:42 INFO  : Disconnected from the channel tcfchan#2.

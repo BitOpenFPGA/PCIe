@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Oct  6 02:14:22 2020
+# Process ID: 19260
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20016 F:\FILE\FPGA\ZYNQ\PCIe\05_PCIE_PIO\pcie_7x_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 917.059 ; gain = 266.918
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2133.582 ; gain = 946.383
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1435] Device xc7z035 (JTAG device index = 1) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z035_1] 0] [lindex [get_cfgmem_parts {s25fl256s-3.3v-qspi-x4-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1435] Device xc7z035 (JTAG device index = 1) is not programmed (DONE status = 0).
+write_cfgmem  -format mcs -size 32 -interface QSPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 32 -interface QSPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+ERROR: [Writecfgmem 68-26] Unsupported interface "QSPIx4-single".
+Supported interfaces are SMAPx8, SMAPx16, SMAPx32, SERIALx1, SPIx1, SPIx2, SPIx4, SPIx8, BPIx8, BPIx16.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 32 -interface QSPIx4-dual_stacked -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 32 -interface QSPIx4-dual_stacked -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+ERROR: [Writecfgmem 68-26] Unsupported interface "QSPIx4-dual_stacked".
+Supported interfaces are SMAPx8, SMAPx16, SMAPx32, SERIALx1, SPIx1, SPIx2, SPIx4, SPIx8, BPIx8, BPIx16.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 32 -interface QSPIx1-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 32 -interface QSPIx1-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+ERROR: [Writecfgmem 68-26] Unsupported interface "QSPIx1-single".
+Supported interfaces are SMAPx8, SMAPx16, SMAPx32, SERIALx1, SPIx1, SPIx2, SPIx4, SPIx8, BPIx8, BPIx16.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 32 -interface QSPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 32 -interface QSPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+ERROR: [Writecfgmem 68-26] Unsupported interface "QSPIx4-single".
+Supported interfaces are SMAPx8, SMAPx16, SMAPx32, SERIALx1, SPIx1, SPIx2, SPIx4, SPIx8, BPIx8, BPIx16.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 256 -interface SPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface SPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+ERROR: [Writecfgmem 68-26] Unsupported interface "SPIx4-single".
+Supported interfaces are SMAPx8, SMAPx16, SMAPx32, SERIALx1, SPIx1, SPIx2, SPIx4, SPIx8, BPIx8, BPIx16.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 256 -interface SPIx4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface SPIx4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Tue Oct  6 03:14:28 2020] Launched synth_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/synth_1/runme.log
+[Tue Oct  6 03:14:29 2020] Launched impl_1...
+Run output will be captured here: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/runme.log
+close_hw
+write_cfgmem  -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 256 -interface qspix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface qspix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+ERROR: [Writecfgmem 68-26] Unsupported interface "qspix4".
+Supported interfaces are SMAPx8, SMAPx16, SMAPx32, SERIALx1, SPIx1, SPIx2, SPIx4, SPIx8, BPIx8, BPIx16.
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+write_cfgmem failed
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem  -format mcs -size 256 -interface SMAPx16 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+Command: write_cfgmem -format mcs -size 256 -interface SMAPx16 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface SMAPX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit
+Writing file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie.mcs
+Writing log file F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SMAPX16
+Size               256M
+Start Address      0x00000000
+End Address        0x0FFFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0022522F    Oct  6 03:28:41 2020    F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3.1
+  **** Build date : Mar 26 2019-05:02:51
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210249856074.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z035_1] 0] [lindex [get_cfgmem_parts {s25fl256s-3.3v-qspi-x4-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+INFO: [Labtools 27-1435] Device xc7z035 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.FILES [list "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z035 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.ila_tx' at location 'uuid_2F90465E033E50E4B46DE08BA03AC383' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'app/PIO/PIO_EP_inst/EP_RX_inst/ila_rx_inst' at location 'uuid_DC72891C9C205DBE92AD41C3941272AC' from probes file, since it cannot be found on the programmed device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249856074
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249856074
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z035 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2179.594 ; gain = 0.000
+WARNING: Simulation object app/PIO/PIO_EP_inst/EP_TX_inst/state was not found in the design.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249856074
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 18:12:22 2020...

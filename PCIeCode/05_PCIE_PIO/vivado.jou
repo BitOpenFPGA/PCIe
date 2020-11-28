@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Oct  6 02:14:22 2020
+# Process ID: 19260
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20016 F:\FILE\FPGA\ZYNQ\PCIe\05_PCIE_PIO\pcie_7x_0_ex.xpr
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/vivado.log
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit} [get_hw_devices xc7z035_1]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+current_hw_device [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z035_1] 0] [lindex [get_cfgmem_parts {s25fl256s-3.3v-qspi-x4-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+write_cfgmem  -format mcs -size 32 -interface QSPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 32 -interface QSPIx4-dual_stacked -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 32 -interface QSPIx1-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 32 -interface QSPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 256 -interface SPIx4-single -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 256 -interface SPIx4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -checksum -force -disablebitswap -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+close_hw
+write_cfgmem  -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 256 -interface spix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 256 -interface qspix4 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+write_cfgmem  -format mcs -size 256 -interface SMAPx16 -loadbit {up 0x00000000 "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit" } -file "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie"
+open_hw
+connect_hw_server
+open_hw_target
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7z035_1] 0] [lindex [get_cfgmem_parts {s25fl256s-3.3v-qspi-x4-single}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.FILES [list "F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/pcie.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.BIN_OFFSET {0} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7z035_1] 0]]
+set_property PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+set_property FULL_PROBES.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.ltx} [get_hw_devices xc7z035_1]
+set_property PROGRAM.FILE {F:/FILE/FPGA/ZYNQ/PCIe/05_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit} [get_hw_devices xc7z035_1]
+program_hw_devices [get_hw_devices xc7z035_1]
+refresh_hw_device [lindex [get_hw_devices xc7z035_1] 0]
+close_hw

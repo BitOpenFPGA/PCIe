@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Thu Jun  7 21:25:07 2018
+# Process ID: 12212
+# Current directory: F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/webtalk/webtalk.log
+# Journal file: F:/MZ7100/CODE/S02/S02_CH11_AXI_Debug_Method/prj/Miz_sys/Miz_sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

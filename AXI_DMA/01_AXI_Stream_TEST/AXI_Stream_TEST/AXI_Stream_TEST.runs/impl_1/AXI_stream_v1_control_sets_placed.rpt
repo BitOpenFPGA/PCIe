@@ -1,0 +1,73 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Sun Aug 30 21:00:33 2020
+| Host         : LAPTOP-8E6RLG3I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AXI_stream_v1_control_sets_placed.rpt
+| Design       : AXI_stream_v1
+| Device       : xc7z035
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    25 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      3 |            1 |
+|      4 |            2 |
+|      5 |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               2 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              13 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |                    Enable Signal                    |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------+-----------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  m00_axis_aclk_IBUF_BUFG |                                                     | AXI_stream_v1_M00_AXIS_inst/axis_tvalid_delay_i_1_n_0 |                1 |              2 |
+|  m00_axis_aclk_IBUF_BUFG |                                                     |                                                       |                1 |              3 |
+|  m00_axis_aclk_IBUF_BUFG | AXI_stream_v1_M00_AXIS_inst/tx_en                   | AXI_stream_v1_M00_AXIS_inst/axis_tvalid_delay_i_1_n_0 |                2 |              4 |
+|  m00_axis_aclk_IBUF_BUFG | AXI_stream_v1_M00_AXIS_inst/read_pointer[3]_i_1_n_0 | AXI_stream_v1_M00_AXIS_inst/axis_tvalid_delay_i_1_n_0 |                1 |              4 |
+|  m00_axis_aclk_IBUF_BUFG | AXI_stream_v1_M00_AXIS_inst/count                   | AXI_stream_v1_M00_AXIS_inst/axis_tvalid_delay_i_1_n_0 |                1 |              5 |
+|  s00_axis_aclk_IBUF_BUFG |                                                     |                                                       |                1 |              5 |
++--------------------------+-----------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+

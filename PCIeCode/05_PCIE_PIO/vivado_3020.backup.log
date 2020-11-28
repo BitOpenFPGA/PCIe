@@ -1,0 +1,176 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Dec 04 00:02:04 2017
+# Process ID: 3020
+# Current directory: E:/MIZ7035/S09/S09_CH01_PCIE_PIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8684 E:\MIZ7035\S09\S09_CH01_PCIE_PIO\pcie_7x_0_ex.xpr
+# Log file: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/vivado.log
+# Journal file: E:/MIZ7035/S09/S09_CH01_PCIE_PIO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.xpr
+INFO: [Project 1-313] Project file moved from 'g:/BaiduNetdiskDownload/A702/S02_CH06_PCIE_PIO/pcie_7x_0_ex' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 864.438 ; gain = 184.941
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+set_property part xc7z035ffg676-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'ila_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ila_rx' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'ila_rx' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'pcie_7x_0' is locked:
+* Current project part 'xc7z035ffg676-2' and the part 'xc7a100tfgg484-2' used to customize the IP 'pcie_7x_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {ila_0 ila_rx pcie_7x_0}] -log ip_upgrade.log
+Upgrading 'ila_0'
+INFO: [IP_Flow 19-3420] Updated ila_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+Upgrading 'ila_rx'
+INFO: [IP_Flow 19-3420] Updated ila_rx to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_rx'...
+Upgrading 'pcie_7x_0'
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [IP_Flow 19-3420] Updated pcie_7x_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie_7x_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/MIZ7035/S09/S09_CH01_PCIE_PIO/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:01:07 ; elapsed = 00:01:07 . Memory (MB): peak = 953.055 ; gain = 36.781
+export_ip_user_files -of_objects [get_ips {ila_0 ila_rx pcie_7x_0}] -no_script -sync -force -quiet
+generate_target all [get_files  {E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_rx/ila_rx.xci E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_rx'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_rx'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_rx'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie_7x_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pcie_7x_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'pcie_7x_0'...
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 985.414 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all ila_0] }
+catch { config_ip_cache -export [get_ips -all ila_rx] }
+catch { config_ip_cache -export [get_ips -all pcie_7x_0] }
+export_ip_user_files -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_rx/ila_rx.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_rx/ila_rx.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci]
+launch_runs -jobs 4 {ila_0_synth_1 ila_rx_synth_1 pcie_7x_0_synth_1}
+[Mon Dec 04 00:06:20 2017] Launched ila_0_synth_1, ila_rx_synth_1, pcie_7x_0_synth_1...
+Run output will be captured here:
+ila_0_synth_1: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/ila_0_synth_1/runme.log
+ila_rx_synth_1: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/ila_rx_synth_1/runme.log
+pcie_7x_0_synth_1: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/pcie_7x_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/sim_scripts -ip_user_files_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files -ipstatic_source_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/modelsim} {questa=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/questa} {riviera=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/riviera} {activehdl=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/ila_rx/ila_rx.xci] -directory E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/sim_scripts -ip_user_files_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files -ipstatic_source_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/modelsim} {questa=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/questa} {riviera=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/riviera} {activehdl=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci] -directory E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/sim_scripts -ip_user_files_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files -ipstatic_source_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/modelsim} {questa=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/questa} {riviera=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/riviera} {activehdl=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_project E:/MIZ7035/S09/S09_CH02_PCIE_DMA_128BIT/pcie_7x_0_example.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+current_project pcie_7x_0_ex
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+set_property -dict [list CONFIG.Device_ID {7021}] [get_ips pcie_7x_0]
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+generate_target all [get_files  E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie_7x_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie_7x_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pcie_7x_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'pcie_7x_0'...
+catch { config_ip_cache -export [get_ips -all pcie_7x_0] }
+export_ip_user_files -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci] -no_script -sync -force -quiet
+reset_run pcie_7x_0_synth_1
+launch_runs -jobs 4 pcie_7x_0_synth_1
+[Mon Dec 04 00:30:37 2017] Launched pcie_7x_0_synth_1...
+Run output will be captured here: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/pcie_7x_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci] -directory E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/sim_scripts -ip_user_files_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files -ipstatic_source_dir E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/modelsim} {questa=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/questa} {riviera=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/riviera} {activehdl=E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 04 00:30:50 2017] Launched pcie_7x_0_synth_1, synth_1...
+Run output will be captured here:
+pcie_7x_0_synth_1: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/pcie_7x_0_synth_1/runme.log
+synth_1: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/synth_1/runme.log
+[Mon Dec 04 00:30:50 2017] Launched impl_1...
+Run output will be captured here: E:/MIZ7035/S09/S09_CH01_PCIE_PIO/pcie_7x_0_ex.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 04 00:39:59 2017...

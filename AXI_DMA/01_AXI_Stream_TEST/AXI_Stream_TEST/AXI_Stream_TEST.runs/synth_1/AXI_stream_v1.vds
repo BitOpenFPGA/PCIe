@@ -1,0 +1,435 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sun Aug 30 20:59:09 2020
+# Process ID: 22600
+# Current directory: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/synth_1
+# Command line: vivado.exe -log AXI_stream_v1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_stream_v1.tcl
+# Log file: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/synth_1/AXI_stream_v1.vds
+# Journal file: F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AXI_stream_v1.tcl -notrace
+Command: synth_design -top AXI_stream_v1 -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11452 
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI_stream_v1_M00_AXIS with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:63]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI_stream_v1_S00_AXIS with formal parameter declaration list [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:53]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 450.797 ; gain = 111.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AXI_stream_v1' [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1.v:4]
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI_stream_v1_M00_AXIS' [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:4]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+	Parameter NUMBER_OF_OUTPUT_WORDS bound to: 8 - type: integer 
+	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
+	Parameter bit_num bound to: 4 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_COUNTER bound to: 2'b01 
+	Parameter SEND_STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:106]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_stream_v1_M00_AXIS' (1#1) [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_M00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AXI_stream_v1_S00_AXIS' [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:4]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:40]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUMBER_OF_INPUT_WORDS bound to: 8 - type: integer 
+	Parameter bit_num bound to: 3 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:40]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_stream_v1_S00_AXIS' (2#1) [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1_S00_AXIS.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_stream_v1' (3#1) [F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/DOC/AXI_stream_v1.v:4]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[31]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[30]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[29]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[28]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[27]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[26]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[25]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[24]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[23]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[22]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[21]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[20]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[19]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[18]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[17]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[16]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[15]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[14]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[13]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[12]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[11]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[10]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[9]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[8]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[7]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[6]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[5]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[4]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[3]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[2]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[1]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TDATA[0]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design AXI_stream_v1_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 484.109 ; gain = 144.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 484.109 ; gain = 144.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 484.109 ; gain = 144.617
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'AXI_stream_v1_M00_AXIS'
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mst_exec_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            INIT_COUNTER |                               01 |                               01
+             SEND_STREAM |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'AXI_stream_v1_M00_AXIS'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 484.109 ; gain = 144.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXI_stream_v1_M00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module AXI_stream_v1_S00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design AXI_stream_v1 has port m00_axis_tstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design AXI_stream_v1 has port m00_axis_tstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design AXI_stream_v1 has port m00_axis_tstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design AXI_stream_v1 has port m00_axis_tstrb[0] driven by constant 1
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[31]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[30]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[29]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[28]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[27]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[26]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[25]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[24]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[23]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[22]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[21]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[20]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[19]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[18]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[17]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[16]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[15]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[14]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[13]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[12]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[11]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[10]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[9]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[8]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[7]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[6]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[5]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[4]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[3]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[2]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[1]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tdata[0]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design AXI_stream_v1 has unconnected port s00_axis_tstrb[0]
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[5]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[6]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[7]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[8]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[9]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[10]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[11]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[12]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[13]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[14]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[15]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[16]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[17]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[18]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[19]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[20]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[21]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[22]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[23]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[24]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[25]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[26]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[27]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[28]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[29]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[30]' (FDRE) to 'AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXI_stream_v1_M00_AXIS_inst/stream_data_out_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     3|
+|3     |LUT2 |     2|
+|4     |LUT3 |     4|
+|5     |LUT4 |     9|
+|6     |LUT5 |     6|
+|7     |LUT6 |     2|
+|8     |FDRE |    22|
+|9     |FDSE |     1|
+|10    |IBUF |     7|
+|11    |OBUF |    39|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------------------------+-----------------------+------+
+|      |Instance                      |Module                 |Cells |
++------+------------------------------+-----------------------+------+
+|1     |top                           |                       |    97|
+|2     |  AXI_stream_v1_M00_AXIS_inst |AXI_stream_v1_M00_AXIS |    38|
+|3     |  AXI_stream_v1_S00_AXIS_inst |AXI_stream_v1_S00_AXIS |    11|
++------+------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 106 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 721.293 ; gain = 381.801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 832.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 832.707 ; gain = 506.250
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 832.707 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/FILE/FPGA/ZYNQ/PCIe/01_AXI_Stream_TEST/AXI_Stream_TEST/AXI_Stream_TEST.runs/synth_1/AXI_stream_v1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXI_stream_v1_utilization_synth.rpt -pb AXI_stream_v1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 30 20:59:29 2020...

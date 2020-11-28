@@ -1,0 +1,1 @@
+Sample in Buffer,Sample in Window,TRIGGER,app/PIO/PIO_EP_inst/EP_TX_inst/req_compl,app/PIO/PIO_EP_inst/EP_TX_inst/state[1:0],app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[63:0],app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[7:0],app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tlast,app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tvalid,app/PIO/PIO_EP_inst/EP_TX_inst/compl_wd

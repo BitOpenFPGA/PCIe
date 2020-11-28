@@ -1,0 +1,274 @@
+[            66497000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x0000
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x00 
+
+	 0x00
+	 0x00
+	 0x41
+	 0x10
+
+
+[            70345000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x0000
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x00 
+
+	 0xee
+	 0x10
+	 0x14
+	 0x70
+
+
+[            74369000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x0000
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x00 
+
+	 0x02
+	 0x8e
+	 0x00
+	 0x00
+
+
+[            78377000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x00 
+
+[            79217000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x01 
+
+	 0x00
+	 0x00
+	 0xf0
+	 0xff
+
+
+[            83225000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x02 
+
+[            84065000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x03 
+
+	 0x00
+	 0x00
+	 0x00
+	 0x00
+
+
+[            88073000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x04 
+
+[            88913000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x05 
+
+	 0x00
+	 0x00
+	 0x00
+	 0x00
+
+
+[            92921000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x06 
+
+[            93761000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x07 
+
+	 0x00
+	 0x00
+	 0x00
+	 0x00
+
+
+[            97769000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x08 
+
+[            98609000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x09 
+
+	 0x00
+	 0x00
+	 0x00
+	 0x00
+
+
+[           102617000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x0a 
+
+[           103457000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x0b 
+
+	 0x00
+	 0x00
+	 0x00
+	 0x00
+
+
+[           107465000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x0c 
+
+[           108305000] : Completion With Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x001
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester Id: 0x01a0 
+	 Tag: 0x0d 
+
+	 0x00
+	 0x00
+	 0x00
+	 0x00
+
+
+[           112313000] : Completion Without Data Frame 
+
+	 Traffic Class: 0x0
+	 TD: 0
+	 EP: 0
+	 Attributes: 0x0
+	 Length: 0x000
+	 Completer Id: 0x01a0
+	 Completion Status: 0x0
+	 Requester 

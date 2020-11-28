@@ -1,0 +1,35 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_d5b8": {
+			"proto_instances": {
+				"/g_inst/slot_0_axi": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARADDR": { "actual": "slot_0_axi_araddr"},
+						"ARESETN": { "actual": "aresetn"},
+						"ARPROT": { "actual": "slot_0_axi_arprot"},
+						"ARREADY": { "actual": "slot_0_axi_arready"},
+						"ARVALID": { "actual": "slot_0_axi_arvalid"},
+						"AWADDR": { "actual": "slot_0_axi_awaddr"},
+						"AWPROT": { "actual": "slot_0_axi_awprot"},
+						"AWREADY": { "actual": "slot_0_axi_awready"},
+						"AWVALID": { "actual": "slot_0_axi_awvalid"},
+						"BREADY": { "actual": "slot_0_axi_bready"},
+						"BRESP": { "actual": "slot_0_axi_bresp"},
+						"BVALID": { "actual": "slot_0_axi_bvalid"},
+						"RDATA": { "actual": "slot_0_axi_rdata"},
+						"RREADY": { "actual": "slot_0_axi_rready"},
+						"RRESP": { "actual": "slot_0_axi_rresp"},
+						"RVALID": { "actual": "slot_0_axi_rvalid"},
+						"WDATA": { "actual": "slot_0_axi_wdata"},
+						"WREADY": { "actual": "slot_0_axi_wready"},
+						"WSTRB": { "actual": "slot_0_axi_wstrb"},
+						"WVALID": { "actual": "slot_0_axi_wvalid"}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1156 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "125000003"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/ila_rx_inst",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "DC72891C9C205DBE92AD41C3941272AC",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[7]",
+                                                "parentNetId": 1
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[6]",
+                                                "parentNetId": 2
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[5]",
+                                                "parentNetId": 3
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[4]",
+                                                "parentNetId": 4
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[3]",
+                                                "parentNetId": 5
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[2]",
+                                                "parentNetId": 6
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[1]",
+                                                "parentNetId": 7
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[0]",
+                                                "parentNetId": 8
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[63]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[62]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[61]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[60]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[59]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[58]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[57]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[56]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[55]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[54]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[53]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[52]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[51]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[50]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[49]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[48]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[47]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[46]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[45]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[44]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[43]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[42]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[41]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[40]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[39]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[38]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[37]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[36]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[35]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[34]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[33]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[32]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[31]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[30]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[29]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[28]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[27]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[26]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[25]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[24]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[23]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[22]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[21]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[20]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[19]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[18]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[17]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[16]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[15]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[14]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[13]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[12]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[11]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[10]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[9]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[8]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[7]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[6]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[5]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[4]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[3]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[2]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[1]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[7]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[6]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[5]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[4]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[3]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[2]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[1]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tkeep[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/m_axis_rx_tready",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.ila_tx",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "2F90465E033E50E4B46DE08BA03AC383",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/req_compl",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state[1]",
+                                                "parentNetId": 78
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state[0]",
+                                                "parentNetId": 79
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[63]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[62]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[61]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[60]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[59]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[58]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[57]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[56]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[55]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[54]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[53]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[52]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[51]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[50]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[49]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[48]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[47]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[46]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[45]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[44]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[43]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[42]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[41]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[40]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[39]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[38]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[37]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[36]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[35]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[34]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[33]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[32]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[31]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[30]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[29]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[28]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[27]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[26]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[25]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[24]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[23]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[22]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[21]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[20]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[19]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[18]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[17]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[16]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[15]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[14]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[13]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[12]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[11]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[10]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[9]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[8]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[7]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[6]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[5]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[4]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[3]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[2]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[1]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[7]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[6]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[5]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[4]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[3]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[2]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[1]"
+                                            },
+                                            {
+                                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tkeep[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tlast",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/s_axis_tx_tvalid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/compl_wd",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 1,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[7]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[7]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[6]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[6]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[5]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[5]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[4]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[4]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[3]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[2]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[1]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "name": "app/PIO/PIO_EP_inst/EP_RX_inst/state[0]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_RX_inst/pio_rx_sm_64.state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "PIO_RX_RST_STATE",
+                                        "val": "00000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD32_DW1DW2",
+                                        "val": "00000001"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR32_DW1DW2",
+                                        "val": "00000010"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_RD64_DW1DW2",
+                                        "val": "00000100"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW1DW2",
+                                        "val": "00001000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_MEM_WR64_DW3",
+                                        "val": "00010000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_IO_WR_DW1DW2",
+                                        "val": "01000000"
+                                    },
+                                    {
+                                        "name": "PIO_RX_WAIT_STATE",
+                                        "val": "00100000"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 78,
+                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state[1]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "PIO_TX_RST_STATE",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "PIO_TX_CPLD_QW1_FIRST",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "PIO_TX_CPLD_QW1_TEMP",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "PIO_TX_CPLD_QW1",
+                                        "val": "11"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 79,
+                        "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state[0]",
+                        "state_reg": [
+                            {
+                                "name": "app/PIO/PIO_EP_inst/EP_TX_inst/gen_cpl_64.state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "PIO_TX_RST_STATE",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "PIO_TX_CPLD_QW1_FIRST",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "PIO_TX_CPLD_QW1_TEMP",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "PIO_TX_CPLD_QW1",
+                                        "val": "11"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
