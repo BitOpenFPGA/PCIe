@@ -3,7 +3,7 @@ PCIe AXI DMA
 
 思维框图：
 
-- ![axi](https://github.com/BitOpenFPGA/PCIe/blob/main/DOC/AXI4.png?raw=true “AXI DMA”)
+- ![axi](https://github.com/BitOpenFPGA/PCIe/blob/main/DOC/AXI4.png?raw=true "AXI DMA")
 
 
 
