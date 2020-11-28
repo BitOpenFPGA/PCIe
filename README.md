@@ -3,7 +3,7 @@ PCIe AXI DMA
 
 思维框图：
 
-- ![avatar]([http://baidu.com/pic/doge.png](https://links.jianshu.com/go?to=http%3A%2F%2Fbaidu.com%2Fpic%2Fdoge.png))
+- ![axi]([https://github.com/BitOpenFPGA/PCIe/blob/main/DOC/AXI4.png?raw=true])
 
 
 
